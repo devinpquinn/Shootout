@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class AnimationTester : MonoBehaviour
 {
-    public Animator anim;
+    public Animator playerAnim;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            anim.Play("Player_Idle");
+            playerAnim.Play("Player_Idle");
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            anim.Play("Player_Draw");
+            playerAnim.Play("Player_Draw");
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            anim.Play("Player_Death");
+            playerAnim.Play("Player_Death");
         }
     }
 }
