@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56c578afbecfbc84694452c2d9f8fe31
-      internalID: 1767678937
+      spriteID: 34c9581987205d741aef17ee1665b01b
+      internalID: 870908139
       vertices: []
       indices: 
       edges: []
@@ -171,8 +171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00ae41be975be1d4081f7d3851e7d4f6
-      internalID: 95050356
+      spriteID: 81a43e9c4eae51e4b99717c4b10a74b4
+      internalID: 372004560
       vertices: []
       indices: 
       edges: []
@@ -192,8 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e46e0523c5ea2924d91bbd4b109ef84e
-      internalID: -1838362958
+      spriteID: 2a88fe0a5a55ab640ac6af9ba9ef1733
+      internalID: 356530573
       vertices: []
       indices: 
       edges: []
@@ -213,8 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 380868a1d8710b64682d5652457b8d6b
-      internalID: -1719725184
+      spriteID: 2a65991b45fbf2444bb7e8e9a9536660
+      internalID: -1599648224
       vertices: []
       indices: 
       edges: []
@@ -234,8 +234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 176881386cd08964dbcae35e7b81e7d1
-      internalID: 642061869
+      spriteID: 1475cf38369cbd64995679f0a522b06b
+      internalID: 2013332185
       vertices: []
       indices: 
       edges: []
@@ -255,8 +255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ec69c52ddd154b4f953ad28e59ca8bb
-      internalID: 2140259029
+      spriteID: 82169872a7a35db4ea66d6d20cee2038
+      internalID: -2043812652
       vertices: []
       indices: 
       edges: []
@@ -265,8 +265,8 @@ TextureImporter:
       name: Shootout_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 432
+        x: 1152
+        y: 540
         width: 192
         height: 108
       alignment: 0
@@ -276,8 +276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d040585633c8d9042931853b319e3f82
-      internalID: 1100580307
+      spriteID: 408d2572fbc916341965b300f6a83d3a
+      internalID: 841745385
       vertices: []
       indices: 
       edges: []
@@ -286,7 +286,7 @@ TextureImporter:
       name: Shootout_7
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 432
         width: 192
         height: 108
@@ -297,8 +297,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3fd77053fc35454eb1b760a5cc02a68
-      internalID: 823358054
+      spriteID: 7130ece57607cdf468c46a2164ca848f
+      internalID: -423862188
       vertices: []
       indices: 
       edges: []
@@ -307,7 +307,7 @@ TextureImporter:
       name: Shootout_8
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 432
         width: 192
         height: 108
@@ -318,8 +318,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52992f64e4833d4499b442cca81aee4c
-      internalID: 740726712
+      spriteID: 04543b7ac1ef5de4f96d471b6a17bf34
+      internalID: 1535900849
       vertices: []
       indices: 
       edges: []
@@ -328,7 +328,7 @@ TextureImporter:
       name: Shootout_9
       rect:
         serializedVersion: 2
-        x: 576
+        x: 384
         y: 432
         width: 192
         height: 108
@@ -339,8 +339,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec15d938b0221534f9f133cded29d88b
-      internalID: 1650546256
+      spriteID: 74b196fe0c6911f458a87c8fb9832c88
+      internalID: 566327497
       vertices: []
       indices: 
       edges: []
@@ -349,7 +349,7 @@ TextureImporter:
       name: Shootout_10
       rect:
         serializedVersion: 2
-        x: 768
+        x: 576
         y: 432
         width: 192
         height: 108
@@ -360,8 +360,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e9924408920a8d4cb9431e02f507503
-      internalID: 130480887
+      spriteID: 1abd733835d5ce44483cad150f09a82e
+      internalID: 1354947594
       vertices: []
       indices: 
       edges: []
@@ -370,6 +370,27 @@ TextureImporter:
       name: Shootout_11
       rect:
         serializedVersion: 2
+        x: 768
+        y: 432
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8348fcacf25909a4a86772eee45e9f90
+      internalID: 844577091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_12
+      rect:
+        serializedVersion: 2
         x: 960
         y: 432
         width: 192
@@ -381,29 +402,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 859693d03f3bb8d499e470ce3f3cd019
-      internalID: -1350423827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shootout_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 324
-        width: 192
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 464376e6756609b47886c5f0d6db1ace
-      internalID: -645302899
+      spriteID: 68b3e2dab7dc6bc4d9d73495e3e48a13
+      internalID: -68825086
       vertices: []
       indices: 
       edges: []
@@ -412,8 +412,8 @@ TextureImporter:
       name: Shootout_13
       rect:
         serializedVersion: 2
-        x: 192
-        y: 324
+        x: 1152
+        y: 432
         width: 192
         height: 108
       alignment: 0
@@ -423,8 +423,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9cdf3e23b4125b4ea84b34dbb6ee370
-      internalID: -1312978105
+      spriteID: 47f556eeedea6ce4a9a9ca57c13ad716
+      internalID: -717765804
       vertices: []
       indices: 
       edges: []
@@ -433,7 +433,7 @@ TextureImporter:
       name: Shootout_14
       rect:
         serializedVersion: 2
-        x: 384
+        x: 0
         y: 324
         width: 192
         height: 108
@@ -444,8 +444,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33b59cb22fdaddd44813ddfe9cab896c
-      internalID: -385776600
+      spriteID: 8eb901503b4631b4f8ce7b3234323a33
+      internalID: 799698227
       vertices: []
       indices: 
       edges: []
@@ -454,7 +454,7 @@ TextureImporter:
       name: Shootout_15
       rect:
         serializedVersion: 2
-        x: 576
+        x: 192
         y: 324
         width: 192
         height: 108
@@ -465,8 +465,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a0337ceb62190042bc030566dd54a7f
-      internalID: -1707273855
+      spriteID: 99aac30e8f541f148998b31fa41c0135
+      internalID: -683598009
       vertices: []
       indices: 
       edges: []
@@ -475,7 +475,7 @@ TextureImporter:
       name: Shootout_16
       rect:
         serializedVersion: 2
-        x: 768
+        x: 384
         y: 324
         width: 192
         height: 108
@@ -486,8 +486,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdb0e66f60972da4796bb9e890de407c
-      internalID: 1389025720
+      spriteID: da7c07c9ac5d5e44bbdd5ca0ce9d4406
+      internalID: -267370496
       vertices: []
       indices: 
       edges: []
@@ -496,6 +496,48 @@ TextureImporter:
       name: Shootout_17
       rect:
         serializedVersion: 2
+        x: 576
+        y: 324
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffde95099688cf544afa1117e3c11f12
+      internalID: -1934270400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_18
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 324
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa50562de9e114c448afc2debd5a88be
+      internalID: 1301068339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_19
+      rect:
+        serializedVersion: 2
         x: 960
         y: 324
         width: 192
@@ -507,50 +549,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fd313617a0f9aa43810c4b99ea0c371
-      internalID: 1578442649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shootout_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 216
-        width: 192
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17778d00f2d40c34384492d0d41daebd
-      internalID: 1063374232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shootout_19
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 216
-        width: 192
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b6364b50dbc1f54ca61beb89935f9c3
-      internalID: -826335026
+      spriteID: 3ec0f17999d82c641ad77fae3b44bd2d
+      internalID: 1103741256
       vertices: []
       indices: 
       edges: []
@@ -559,8 +559,8 @@ TextureImporter:
       name: Shootout_20
       rect:
         serializedVersion: 2
-        x: 384
-        y: 216
+        x: 1152
+        y: 324
         width: 192
         height: 108
       alignment: 0
@@ -570,8 +570,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dccb395147968848be42261d7d82477
-      internalID: -925680552
+      spriteID: ab64ead1b8c7f3a428e56d3a0ab67c03
+      internalID: -797595813
       vertices: []
       indices: 
       edges: []
@@ -580,7 +580,7 @@ TextureImporter:
       name: Shootout_21
       rect:
         serializedVersion: 2
-        x: 576
+        x: 0
         y: 216
         width: 192
         height: 108
@@ -591,8 +591,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7df58374272167d429899984d723dc10
-      internalID: 297090198
+      spriteID: 6daf544d53cd14f40b2e63ea3d8e1480
+      internalID: -804786176
       vertices: []
       indices: 
       edges: []
@@ -601,7 +601,7 @@ TextureImporter:
       name: Shootout_22
       rect:
         serializedVersion: 2
-        x: 768
+        x: 192
         y: 216
         width: 192
         height: 108
@@ -612,8 +612,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 506b444280c9f3e4daf3e77eadc037b5
-      internalID: -1094172446
+      spriteID: 6db0f7a582105df4189de2328344445e
+      internalID: 664324171
       vertices: []
       indices: 
       edges: []
@@ -622,6 +622,69 @@ TextureImporter:
       name: Shootout_23
       rect:
         serializedVersion: 2
+        x: 384
+        y: 216
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a612f1ea460cc3946aaa5839be553807
+      internalID: 527537699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_24
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 216
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8ebfe35d5b04342a3f1684c9d0612a
+      internalID: 1248722671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_25
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 216
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40abeda7162865345bdce9288df24ef0
+      internalID: 1829182668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_26
+      rect:
+        serializedVersion: 2
         x: 960
         y: 216
         width: 192
@@ -633,71 +696,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 398d8dd28a301d24b8f58cfddb3a12d8
-      internalID: 680177989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shootout_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 108
-        width: 192
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abab1ef5924ab0c4bbbc6f26f6d4c57d
-      internalID: -795724997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shootout_25
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 108
-        width: 192
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c3e8786763b20740b0cfaab56d5742a
-      internalID: 1698636599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shootout_26
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 108
-        width: 192
-        height: 108
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0cb704e931626044e837fa91d0101c82
-      internalID: 591631848
+      spriteID: 08d3a567c08b4a04dad02fd5e8903726
+      internalID: -1776623885
       vertices: []
       indices: 
       edges: []
@@ -706,6 +706,90 @@ TextureImporter:
       name: Shootout_27
       rect:
         serializedVersion: 2
+        x: 1152
+        y: 216
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9f392492cd11142b89b2012c3a888c
+      internalID: -722646967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad01ae04319b20439d691c85cb84364
+      internalID: -2095944046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 108
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8175dd0ddf2b10f45a796811b1b23949
+      internalID: -593942321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_30
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 108
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d967c8f1fcfe1e24a860d0e8016e22be
+      internalID: -1979423948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_31
+      rect:
+        serializedVersion: 2
         x: 576
         y: 108
         width: 192
@@ -717,14 +801,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a17591a38e85cb4a93c9eabb8a10043
-      internalID: 1015706290
+      spriteID: 495b5b486eafc68469c25df34b0d63e0
+      internalID: 1962904264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shootout_28
+      name: Shootout_32
       rect:
         serializedVersion: 2
         x: 768
@@ -738,14 +822,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d67ee6ed0e1e4e941b95cae8a39c265e
-      internalID: -1570868818
+      spriteID: c8745c8519870fe4ea5a7584bd6f8439
+      internalID: -97044736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shootout_29
+      name: Shootout_33
       rect:
         serializedVersion: 2
         x: 960
@@ -759,14 +843,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97f1f0f1bc69d234bacdeb55883b7f1c
-      internalID: -1062144239
+      spriteID: 21cb9217adc7b7f44a9b18f108b23f60
+      internalID: -821071036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shootout_30
+      name: Shootout_34
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 108
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0916bf3e41758ca48a7979a99bc7c5a0
+      internalID: -1584769899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_35
       rect:
         serializedVersion: 2
         x: 0
@@ -780,14 +885,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d45215b046da794bb12b969c0eab9c2
-      internalID: -725812586
+      spriteID: d543a7f8b6707244099808ea322ab46b
+      internalID: 1412665681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shootout_31
+      name: Shootout_36
       rect:
         serializedVersion: 2
         x: 192
@@ -801,14 +906,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe6a304bdae105c47828d8e6741eaa20
-      internalID: -72871494
+      spriteID: cfad11dfbf8ccfc4d82ff21361e32c7a
+      internalID: 196370456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shootout_32
+      name: Shootout_37
       rect:
         serializedVersion: 2
         x: 384
@@ -822,14 +927,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b70e20c05531ce4eadc77695b10bebf
-      internalID: 1638536358
+      spriteID: f83d7ae3ad805cf4f802821f4193a8ba
+      internalID: -105167402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shootout_33
+      name: Shootout_38
       rect:
         serializedVersion: 2
         x: 576
@@ -843,14 +948,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d54fcf29b402bc448376706f9c77d24
-      internalID: -1552750170
+      spriteID: 7deb97fa8d76a9943aea65af689ebf5c
+      internalID: 1740927522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shootout_34
+      name: Shootout_39
       rect:
         serializedVersion: 2
         x: 768
@@ -864,14 +969,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d383076a749c7c468e94200793f7b44
-      internalID: 1100205620
+      spriteID: 22f1c8acb2e721a4d8d0efa355659a09
+      internalID: 2129949253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shootout_35
+      name: Shootout_40
       rect:
         serializedVersion: 2
         x: 960
@@ -885,8 +990,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 578a07dd119e7ee47ab6769f58bc8041
-      internalID: 257642142
+      spriteID: e3a32834e86931f41ac828be728d08e8
+      internalID: -376833102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shootout_41
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f82894cb8b22c14aa90ccdac0a1ac68
+      internalID: 1683961666
       vertices: []
       indices: 
       edges: []
@@ -902,42 +1028,48 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Shootout_0: 1767678937
-      Shootout_1: 95050356
-      Shootout_10: 130480887
-      Shootout_11: -1350423827
-      Shootout_12: -645302899
-      Shootout_13: -1312978105
-      Shootout_14: -385776600
-      Shootout_15: -1707273855
-      Shootout_16: 1389025720
-      Shootout_17: 1578442649
-      Shootout_18: 1063374232
-      Shootout_19: -826335026
-      Shootout_2: -1838362958
-      Shootout_20: -925680552
-      Shootout_21: 297090198
-      Shootout_22: -1094172446
-      Shootout_23: 680177989
-      Shootout_24: -795724997
-      Shootout_25: 1698636599
-      Shootout_26: 591631848
-      Shootout_27: 1015706290
-      Shootout_28: -1570868818
-      Shootout_29: -1062144239
-      Shootout_3: -1719725184
-      Shootout_30: -725812586
-      Shootout_31: -72871494
-      Shootout_32: 1638536358
-      Shootout_33: -1552750170
-      Shootout_34: 1100205620
-      Shootout_35: 257642142
-      Shootout_4: 642061869
-      Shootout_5: 2140259029
-      Shootout_6: 1100580307
-      Shootout_7: 823358054
-      Shootout_8: 740726712
-      Shootout_9: 1650546256
+      Shootout_0: 870908139
+      Shootout_1: 372004560
+      Shootout_10: 1354947594
+      Shootout_11: 844577091
+      Shootout_12: -68825086
+      Shootout_13: -717765804
+      Shootout_14: 799698227
+      Shootout_15: -683598009
+      Shootout_16: -267370496
+      Shootout_17: -1934270400
+      Shootout_18: 1301068339
+      Shootout_19: 1103741256
+      Shootout_2: 356530573
+      Shootout_20: -797595813
+      Shootout_21: -804786176
+      Shootout_22: 664324171
+      Shootout_23: 527537699
+      Shootout_24: 1248722671
+      Shootout_25: 1829182668
+      Shootout_26: -1776623885
+      Shootout_27: -722646967
+      Shootout_28: -2095944046
+      Shootout_29: -593942321
+      Shootout_3: -1599648224
+      Shootout_30: -1979423948
+      Shootout_31: 1962904264
+      Shootout_32: -97044736
+      Shootout_33: -821071036
+      Shootout_34: -1584769899
+      Shootout_35: 1412665681
+      Shootout_36: 196370456
+      Shootout_37: -105167402
+      Shootout_38: 1740927522
+      Shootout_39: 2129949253
+      Shootout_4: 2013332185
+      Shootout_40: -376833102
+      Shootout_41: 1683961666
+      Shootout_5: -2043812652
+      Shootout_6: 841745385
+      Shootout_7: -423862188
+      Shootout_8: 1535900849
+      Shootout_9: 566327497
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
