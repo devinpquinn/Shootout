@@ -12,11 +12,11 @@ public class ShootoutManager : MonoBehaviour
         {
             Idle();
         }
-        else if (Input.GetKeyDown(KeyCode.A))
+        else if (Input.GetKeyDown(KeyCode.D))
         {
             Shoot_L();
         }
-        else if (Input.GetKeyDown(KeyCode.D))
+        else if (Input.GetKeyDown(KeyCode.A))
         {
             Shoot_R();
         }
