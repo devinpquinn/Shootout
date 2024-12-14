@@ -6,6 +6,11 @@ public class Encounter : MonoBehaviour
 {
     public List<string> lines; //the dialog text of this encounter
     public List<Hunch> hunches;
+
+    public void Begin()
+    {
+
+    }
 }
 
 [System.Serializable]

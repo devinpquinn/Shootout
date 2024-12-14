@@ -1,10 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ShootoutManager : MonoBehaviour
 {
+    public static ShootoutManager instance;
+
+    public Encounter encounter;
+    public TextScroller dialogText;
+    public TextMeshProUGUI hunchText;
+
     public Animator shootoutAnim;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Update()
     {
