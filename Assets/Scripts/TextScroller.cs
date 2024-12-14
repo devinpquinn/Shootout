@@ -29,6 +29,8 @@ public class TextScroller : MonoBehaviour
     private string silentChars = ",.-?!;:()[]{}<>*& ";
     */
 
+    private Coroutine waitToAdvance;
+
     private void Awake()
     {
         dialogText = GetComponent<TextMeshProUGUI>();
@@ -118,7 +120,15 @@ public class TextScroller : MonoBehaviour
             dialogText.text = rawText;
 
             //wait for a few seconds and then advance
+            waitToAdvance = StartCoroutine(WaitAndAdvance());
         }
+    }
+
+    IEnumerator WaitAndAdvance()
+    {
+        yield return new WaitForSeconds(2f);
+
+        ShootoutManager.instance.encounter.Continue();
     }
 
     private void Update()

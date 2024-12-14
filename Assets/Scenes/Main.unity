@@ -310,7 +310,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1608479999}
-  - {fileID: 1856363166}
   - {fileID: 2113668393}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -447,7 +446,7 @@ GameObject:
   - component: {fileID: 1608480001}
   - component: {fileID: 1608480000}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Dialog Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -464,7 +463,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1856363166}
   m_Father: {fileID: 558596842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
@@ -536,16 +536,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856363165}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 558596842}
+  m_Father: {fileID: 1608479999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -120}
+  m_AnchoredPosition: {x: 0, y: -34.999992}
   m_SizeDelta: {x: 1000, y: 200}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1856363167
@@ -687,12 +687,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a36e1a5b0e761ca47bca93015a0b7894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
-  hunches: []
-  currentHunch:
-    decoy: 0
-    keyword: 
-    hint: 
+  lines:
+  - This is the first line.
+  - This is the second line.
+  - This is the third line.
+  hunches:
+  - decoy: 0
+    keyword: third
+    hint: Third
+  - decoy: 1
+    keyword: hundred
+    hint: Hundredth
 --- !u!4 &1857657082
 Transform:
   m_ObjectHideFlags: 0

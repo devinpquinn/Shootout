@@ -5,17 +5,39 @@ using UnityEngine;
 public class Encounter : MonoBehaviour
 {
     public List<string> lines; //the dialog text of this encounter
+    private int lineIndex = 0;
     public List<Hunch> hunches;
 
-    public Hunch currentHunch = null;
+    private Hunch currentHunch = null;
 
     public void Begin()
     {
         //select hunch
+        currentHunch = hunches[Random.Range(0, hunches.Count)];
 
         //set hunch text
+        ShootoutManager.instance.hunchText.SetText(currentHunch.hint);
+
         //maybe wait?
+
         //start playing lines of dialog
+        lineIndex = 0;
+        ShootoutManager.instance.dialogText.NewLine(lines[0]);
+    }
+
+    public void Continue()
+    {
+        lineIndex++;
+
+        if(lines.Count > lineIndex)
+        {
+            //continue to next line
+            ShootoutManager.instance.dialogText.NewLine(lines[lineIndex]);
+        }
+        else
+        {
+            //end encounter
+        }
     }
 }
 

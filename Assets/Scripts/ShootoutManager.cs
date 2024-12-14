@@ -18,6 +18,11 @@ public class ShootoutManager : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        encounter.Begin();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
@@ -37,8 +42,6 @@ public class ShootoutManager : MonoBehaviour
     public void Idle()
     {
         shootoutAnim.Play("Shootout_Idle");
-
-        dialogText.NewLine("Lorem ipsum dolor sit amet");
     }
 
     public void Shoot_L()
