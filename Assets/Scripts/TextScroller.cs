@@ -11,9 +11,6 @@ public class TextScroller : MonoBehaviour
     //tmp
     private TextMeshProUGUI dialogText;
 
-    //markup, everything after this tag will be shaded out
-    private string richTag = "<color=clear>";
-
     //current character index in line
     private int index = 0;
 
@@ -21,7 +18,7 @@ public class TextScroller : MonoBehaviour
     private float timePerChar = 0.035f;
 
     //decreases every update
-    private float timer = 999;
+    private float timer = Mathf.Infinity;
 
     //audio stuff
     /*
@@ -41,7 +38,7 @@ public class TextScroller : MonoBehaviour
     public void NewLine(string line)
     {
         rawText = line;
-        dialogText.text = richTag + rawText;
+        dialogText.text = "";
 
         index = 0;
         timer = timePerChar;
@@ -98,7 +95,7 @@ public class TextScroller : MonoBehaviour
                 timer = timePerChar;
             }
 
-            dialogText.text = rawText.Substring(0, index) + richTag + rawText.Substring(index);
+            dialogText.text = rawText.Substring(0, index);
 
             //letter audio
             /*

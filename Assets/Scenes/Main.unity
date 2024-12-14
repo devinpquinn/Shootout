@@ -415,6 +415,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07529f0e688fdd4ca78da6104bf87c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  encounter: {fileID: 1857657081}
+  dialogText: {fileID: 1856363169}
+  hunchText: {fileID: 2113668394}
   shootoutAnim: {fileID: 1943521708}
 --- !u!4 &1132137476
 Transform:
@@ -442,6 +445,7 @@ GameObject:
   - component: {fileID: 1856363166}
   - component: {fileID: 1856363168}
   - component: {fileID: 1856363167}
+  - component: {fileID: 1856363169}
   m_Layer: 5
   m_Name: DialogText
   m_TagString: Untagged
@@ -566,6 +570,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856363165}
   m_CullTransparentMesh: 1
+--- !u!114 &1856363169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856363165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9128fd779a109bf4f804b0bf1205e708, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1857657080
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +613,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines: []
   hunches: []
+  currentHunch:
+    decoy: 0
+    keyword: 
+    hint: 
 --- !u!4 &1857657082
 Transform:
   m_ObjectHideFlags: 0

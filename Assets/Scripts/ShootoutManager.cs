@@ -37,6 +37,8 @@ public class ShootoutManager : MonoBehaviour
     public void Idle()
     {
         shootoutAnim.Play("Shootout_Idle");
+
+        dialogText.NewLine("Lorem ipsum dolor sit amet");
     }
 
     public void Shoot_L()
