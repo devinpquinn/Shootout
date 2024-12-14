@@ -658,6 +658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9128fd779a109bf4f804b0bf1205e708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockAdvance: 0
 --- !u!1 &1857657080
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,13 +692,18 @@ MonoBehaviour:
   - This is the first line.
   - This is the second line.
   - This is the third line.
+  - This is the fourth line.
   hunches:
   - decoy: 0
     keyword: third
     hint: Third
   - decoy: 1
-    keyword: hundred
+    keyword: hundredth
     hint: Hundredth
+  currentHunch:
+    decoy: 0
+    keyword: 
+    hint: 
 --- !u!4 &1857657082
 Transform:
   m_ObjectHideFlags: 0

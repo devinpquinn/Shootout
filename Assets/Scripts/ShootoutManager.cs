@@ -13,6 +13,9 @@ public class ShootoutManager : MonoBehaviour
 
     public Animator shootoutAnim;
 
+    private float drawTime = 1f;
+    private Coroutine enemyDraw;
+
     private void Awake()
     {
         instance = this;
@@ -37,6 +40,18 @@ public class ShootoutManager : MonoBehaviour
         {
             Shoot_R();
         }
+    }
+
+    public void PrepareToDraw()
+    {
+        enemyDraw = StartCoroutine(CountdownToDraw());
+    }
+
+    IEnumerator CountdownToDraw()
+    {
+        yield return new WaitForSeconds(drawTime);
+
+        Shoot_R();
     }
 
     public void Idle()

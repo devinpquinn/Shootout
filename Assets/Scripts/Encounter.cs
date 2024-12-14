@@ -8,7 +8,7 @@ public class Encounter : MonoBehaviour
     private int lineIndex = 0;
     public List<Hunch> hunches;
 
-    private Hunch currentHunch = null;
+    [HideInInspector] public Hunch currentHunch = null;
 
     public void Begin()
     {
