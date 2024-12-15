@@ -544,9 +544,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sky: {fileID: 1054795657}
-  skyColorDark: {r: 0.03, g: 0.03, b: 0.03, a: 1}
+  skyColorDark: {r: 0.02, g: 0.02, b: 0.02, a: 1}
   ground: {fileID: 2050394748}
-  groundColorDark: {r: 0.101960786, g: 0.101960786, b: 0.101960786, a: 1}
+  groundColorDark: {r: 0.06, g: 0.06, b: 0.06, a: 1}
 --- !u!1 &847897198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,7 +1111,7 @@ Transform:
   m_GameObject: {fileID: 2050394747}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.375, z: 0}
+  m_LocalPosition: {x: 0, y: -6.25, z: 0}
   m_LocalScale: {x: 18, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
