@@ -11,7 +11,8 @@ public class ShootoutManager : MonoBehaviour
     public TextScroller dialogText;
     public TextMeshProUGUI hunchText;
 
-    public Animator shootoutAnim;
+    public Animator playerAnim;
+    public Animator enemyAnim;
 
     private float drawTime = 0.5f;
     private Coroutine enemyDraw;
@@ -34,11 +35,11 @@ public class ShootoutManager : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.D))
         {
-            Shoot_L();
+            PlayerDraw();
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
-            Shoot_R();
+            EnemyDraw();
         }
     }
 
@@ -51,21 +52,24 @@ public class ShootoutManager : MonoBehaviour
     {
         yield return new WaitForSeconds(drawTime);
 
-        Shoot_R();
+        EnemyDraw();
     }
 
     public void Idle()
     {
-        shootoutAnim.Play("Shootout_Idle");
+        playerAnim.Play("Player_Idle");
+        enemyAnim.Play("Enemy_Idle");
     }
 
-    public void Shoot_L()
+    public void PlayerDraw()
     {
-        shootoutAnim.Play("Shootout_Shoot_L");
+        playerAnim.Play("Player_Draw");
+        enemyAnim.Play("Enemy_Die");
     }
 
-    public void Shoot_R()
+    public void EnemyDraw()
     {
-        shootoutAnim.Play("Shootout_Shoot_R");
+        playerAnim.Play("Player_Die");
+        enemyAnim.Play("Enemy_Draw");
     }
 }
