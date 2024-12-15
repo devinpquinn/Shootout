@@ -435,6 +435,7 @@ GameObject:
   - component: {fileID: 648824284}
   - component: {fileID: 648824283}
   - component: {fileID: 648824285}
+  - component: {fileID: 648824286}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -530,6 +531,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &648824286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648824282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6b686a2c4550f44b7b5c1f381f26f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {fileID: 1054795657}
+  backgroundColorDark: {r: 0.02, g: 0.02, b: 0.02, a: 1}
 --- !u!1 &847897198
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,8 +1010,8 @@ MonoBehaviour:
     keyword: third
     hint: Third
   - decoy: 1
-    keyword: hundredth
-    hint: Hundredth
+    keyword: sarsaparilla
+    hint: Sarsaparilla
   currentHunch:
     decoy: 0
     keyword: 
