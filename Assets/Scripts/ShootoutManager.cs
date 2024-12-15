@@ -13,7 +13,7 @@ public class ShootoutManager : MonoBehaviour
 
     public Animator shootoutAnim;
 
-    private float drawTime = 1f;
+    private float drawTime = 0.5f;
     private Coroutine enemyDraw;
 
     private void Awake()
