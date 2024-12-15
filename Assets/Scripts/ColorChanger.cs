@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class ColorChanger : MonoBehaviour
 {
-    public SpriteRenderer background;
-    private Color backgroundColorDefault;
-    public Color backgroundColorDark;
+    public SpriteRenderer sky;
+    private Color skyColorDefault;
+    public Color skyColorDark;
+
+    public SpriteRenderer ground;
+    private Color groundColorDefault;
+    public Color groundColorDark;
 
     private void Awake()
     {
-        backgroundColorDefault = background.color;
+        skyColorDefault = sky.color;
+        groundColorDefault = ground.color;
     }
 
-    public void Background_Darken()
+    public void MuzzleFlash_Darken()
     {
-        background.color = backgroundColorDark;
+        sky.color = skyColorDark;
+        ground.color = groundColorDark;
     }
 
-    public void Background_Restore()
+    public void MuzzleFlash_Restore()
     {
-        background.color = backgroundColorDefault;
+        sky.color = skyColorDefault;
+        ground.color = groundColorDefault;
     }
 }

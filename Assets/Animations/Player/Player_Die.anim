@@ -113,14 +113,14 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.2
-    functionName: Background_Darken
+    functionName: MuzzleFlash_Darken
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.7
-    functionName: Background_Restore
+    functionName: MuzzleFlash_Restore
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
