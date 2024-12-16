@@ -65,6 +65,17 @@ public class ShootoutManager : MonoBehaviour
     {
         playerAnim.Play("Player_Draw");
         enemyAnim.Play("Enemy_Die");
+
+        if (encounter.currentHunch.decoy)
+        {
+            enemyAnim.SetBool("Alien", false);
+        }
+        else
+        {
+            enemyAnim.SetBool("Alien", true);
+        }
+
+        dialogText.lockAdvance = true;
     }
 
     public void EnemyDraw()
