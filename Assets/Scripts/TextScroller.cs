@@ -139,7 +139,10 @@ public class TextScroller : MonoBehaviour
     {
         yield return new WaitForSeconds(2.5f);
 
-        ShootoutManager.instance.encounter.Continue();
+        if (!lockAdvance)
+        {
+            ShootoutManager.instance.encounter.Continue();
+        }
     }
 
     private void Update()
