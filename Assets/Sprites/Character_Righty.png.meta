@@ -265,8 +265,8 @@ TextureImporter:
       name: Character_Righty_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 408
+        y: 120
         width: 68
         height: 24
       alignment: 7
@@ -286,7 +286,7 @@ TextureImporter:
       name: Character_Righty_7
       rect:
         serializedVersion: 2
-        x: 68
+        x: 0
         y: 96
         width: 68
         height: 24
@@ -307,7 +307,7 @@ TextureImporter:
       name: Character_Righty_8
       rect:
         serializedVersion: 2
-        x: 136
+        x: 68
         y: 96
         width: 68
         height: 24
@@ -328,7 +328,7 @@ TextureImporter:
       name: Character_Righty_9
       rect:
         serializedVersion: 2
-        x: 204
+        x: 136
         y: 96
         width: 68
         height: 24
@@ -349,7 +349,7 @@ TextureImporter:
       name: Character_Righty_10
       rect:
         serializedVersion: 2
-        x: 272
+        x: 204
         y: 96
         width: 68
         height: 24
@@ -370,7 +370,7 @@ TextureImporter:
       name: Character_Righty_11
       rect:
         serializedVersion: 2
-        x: 340
+        x: 272
         y: 96
         width: 68
         height: 24
@@ -391,8 +391,8 @@ TextureImporter:
       name: Character_Righty_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 72
+        x: 340
+        y: 96
         width: 68
         height: 24
       alignment: 7
@@ -412,8 +412,8 @@ TextureImporter:
       name: Character_Righty_13
       rect:
         serializedVersion: 2
-        x: 68
-        y: 72
+        x: 408
+        y: 96
         width: 68
         height: 24
       alignment: 7
@@ -433,7 +433,7 @@ TextureImporter:
       name: Character_Righty_14
       rect:
         serializedVersion: 2
-        x: 136
+        x: 0
         y: 72
         width: 68
         height: 24
@@ -454,7 +454,7 @@ TextureImporter:
       name: Character_Righty_15
       rect:
         serializedVersion: 2
-        x: 204
+        x: 68
         y: 72
         width: 68
         height: 24
@@ -475,7 +475,7 @@ TextureImporter:
       name: Character_Righty_16
       rect:
         serializedVersion: 2
-        x: 272
+        x: 136
         y: 72
         width: 68
         height: 24
@@ -496,7 +496,7 @@ TextureImporter:
       name: Character_Righty_17
       rect:
         serializedVersion: 2
-        x: 340
+        x: 204
         y: 72
         width: 68
         height: 24
@@ -517,8 +517,8 @@ TextureImporter:
       name: Character_Righty_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 272
+        y: 72
         width: 68
         height: 24
       alignment: 7
@@ -538,8 +538,8 @@ TextureImporter:
       name: Character_Righty_19
       rect:
         serializedVersion: 2
-        x: 68
-        y: 48
+        x: 340
+        y: 72
         width: 68
         height: 24
       alignment: 7
@@ -559,8 +559,8 @@ TextureImporter:
       name: Character_Righty_20
       rect:
         serializedVersion: 2
-        x: 136
-        y: 48
+        x: 408
+        y: 72
         width: 68
         height: 24
       alignment: 7
@@ -580,7 +580,7 @@ TextureImporter:
       name: Character_Righty_21
       rect:
         serializedVersion: 2
-        x: 204
+        x: 0
         y: 48
         width: 68
         height: 24
@@ -601,7 +601,7 @@ TextureImporter:
       name: Character_Righty_22
       rect:
         serializedVersion: 2
-        x: 272
+        x: 68
         y: 48
         width: 68
         height: 24
@@ -622,7 +622,7 @@ TextureImporter:
       name: Character_Righty_23
       rect:
         serializedVersion: 2
-        x: 340
+        x: 136
         y: 48
         width: 68
         height: 24
@@ -643,8 +643,8 @@ TextureImporter:
       name: Character_Righty_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 24
+        x: 204
+        y: 48
         width: 68
         height: 24
       alignment: 7
@@ -664,8 +664,8 @@ TextureImporter:
       name: Character_Righty_25
       rect:
         serializedVersion: 2
-        x: 68
-        y: 24
+        x: 272
+        y: 48
         width: 68
         height: 24
       alignment: 7
@@ -685,8 +685,8 @@ TextureImporter:
       name: Character_Righty_26
       rect:
         serializedVersion: 2
-        x: 136
-        y: 24
+        x: 340
+        y: 48
         width: 68
         height: 24
       alignment: 7
@@ -706,8 +706,8 @@ TextureImporter:
       name: Character_Righty_27
       rect:
         serializedVersion: 2
-        x: 204
-        y: 24
+        x: 408
+        y: 48
         width: 68
         height: 24
       alignment: 7
@@ -727,7 +727,7 @@ TextureImporter:
       name: Character_Righty_28
       rect:
         serializedVersion: 2
-        x: 272
+        x: 0
         y: 24
         width: 68
         height: 24
@@ -748,7 +748,7 @@ TextureImporter:
       name: Character_Righty_29
       rect:
         serializedVersion: 2
-        x: 340
+        x: 68
         y: 24
         width: 68
         height: 24
@@ -769,8 +769,8 @@ TextureImporter:
       name: Character_Righty_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 136
+        y: 24
         width: 68
         height: 24
       alignment: 7
@@ -790,8 +790,8 @@ TextureImporter:
       name: Character_Righty_31
       rect:
         serializedVersion: 2
-        x: 68
-        y: 0
+        x: 204
+        y: 24
         width: 68
         height: 24
       alignment: 7
@@ -811,8 +811,8 @@ TextureImporter:
       name: Character_Righty_32
       rect:
         serializedVersion: 2
-        x: 136
-        y: 0
+        x: 272
+        y: 24
         width: 68
         height: 24
       alignment: 7
@@ -832,8 +832,8 @@ TextureImporter:
       name: Character_Righty_33
       rect:
         serializedVersion: 2
-        x: 204
-        y: 0
+        x: 340
+        y: 24
         width: 68
         height: 24
       alignment: 7
@@ -853,8 +853,8 @@ TextureImporter:
       name: Character_Righty_34
       rect:
         serializedVersion: 2
-        x: 272
-        y: 0
+        x: 408
+        y: 24
         width: 68
         height: 24
       alignment: 7
@@ -874,7 +874,7 @@ TextureImporter:
       name: Character_Righty_35
       rect:
         serializedVersion: 2
-        x: 340
+        x: 0
         y: 0
         width: 68
         height: 24
@@ -887,6 +887,90 @@ TextureImporter:
       bones: []
       spriteID: 7b5063a839e84654dafb77419b2d0457
       internalID: 1741398504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Righty_36
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 68
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babdc14e8d18a46448227d975e8c77c8
+      internalID: 313479974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Righty_37
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 68
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469d11ad9b02a9c49b9293c8b72f4701
+      internalID: -11393205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Righty_38
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 68
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ec71e5092b36e439e08a1f93d40431
+      internalID: 515943006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Righty_39
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 68
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccba993d92d4c6547bf2c65b4ca60084
+      internalID: 1894786506
       vertices: []
       indices: 
       edges: []
@@ -932,6 +1016,10 @@ TextureImporter:
       Character_Righty_33: -1094951597
       Character_Righty_34: 489328591
       Character_Righty_35: 1741398504
+      Character_Righty_36: 313479974
+      Character_Righty_37: -11393205
+      Character_Righty_38: 515943006
+      Character_Righty_39: 1894786506
       Character_Righty_4: -61268918
       Character_Righty_5: -1026783031
       Character_Righty_6: -1398989255
