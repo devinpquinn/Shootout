@@ -44,13 +44,6 @@ public class TextScroller : MonoBehaviour
 
     public void NewLine(string line)
     {
-        //set dynamic bubble
-        /*
-        dialogText.text = line;
-        dialogText.ForceMeshUpdate();
-        int numLines = dialogText.textInfo.lineCount;
-        */
-
         rawText = line;
         dialogText.text = "";
 
