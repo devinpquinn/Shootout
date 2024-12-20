@@ -48,7 +48,7 @@ public class TextScroller : MonoBehaviour
         dialogText.ForceMeshUpdate();
         int numLines = dialogText.textInfo.lineCount;
         Vector2 bubbleDelta = bubble.sizeDelta;
-        bubbleDelta.y = Mathf.Lerp(180, 360, (numLines - 1) / (float)4);
+        bubbleDelta.y = Mathf.Lerp(190, 360, (numLines - 1) / (float)4);
         bubble.sizeDelta = bubbleDelta;
 
         //set text pos

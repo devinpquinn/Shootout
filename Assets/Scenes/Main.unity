@@ -1459,8 +1459,10 @@ MonoBehaviour:
   lines:
   - This is the first line.
   - This is the second line. It's a bit longer than the first line.
-  - This is the third line.
-  - And finally, this is the fourth line.
+  - This is the third line. Believe it or not, it's even a bit longer. Impressive,
+    right? Surely this is all we can fit.
+  - And finally, this is the fourth line. Wow, look at all the space that's left
+    in this speech bubble. Surely we're not going for four lines... No, that's impossible.
   hunches:
   - decoy: 0
     keyword: third
