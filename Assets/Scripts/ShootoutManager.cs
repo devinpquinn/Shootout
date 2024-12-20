@@ -65,6 +65,7 @@ public class ShootoutManager : MonoBehaviour
     public void PlayerDraw()
     {
         playerDrew = true;
+        CutOffDialog();
 
         playerAnim.Play("Player_Draw");
         enemyAnim.Play("Enemy_Die");
@@ -84,8 +85,15 @@ public class ShootoutManager : MonoBehaviour
     public void EnemyDraw()
     {
         enemyDrew = true;
+        CutOffDialog();
 
         playerAnim.Play("Player_Die");
         enemyAnim.Play("Enemy_Draw");
+    }
+
+    public void CutOffDialog()
+    {
+        dialogText.lockScroll = true;
+        dialogText.dialogText.text += "--";
     }
 }
