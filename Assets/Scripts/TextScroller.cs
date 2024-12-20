@@ -32,6 +32,9 @@ public class TextScroller : MonoBehaviour
     private Coroutine waitToAdvance;
     [HideInInspector] public bool lockAdvance = false;
 
+    //UI
+    public RectTransform bubble;
+
     private void Awake()
     {
         dialogText = GetComponent<TextMeshProUGUI>();
@@ -40,6 +43,20 @@ public class TextScroller : MonoBehaviour
 
     public void NewLine(string line)
     {
+        //set dynamic bubble
+        dialogText.text = line;
+        dialogText.ForceMeshUpdate();
+        int numLines = dialogText.textInfo.lineCount;
+        Vector2 bubbleDelta = bubble.sizeDelta;
+        bubbleDelta.y = Mathf.Lerp(180, 360, (numLines - 1) / (float)4);
+        bubble.sizeDelta = bubbleDelta;
+
+        //set text pos
+        Vector3 textDelta = GetComponent<RectTransform>().localPosition;
+        textDelta.y = Mathf.Lerp(-207.5f, -35f, (numLines - 1) / (float)4);
+        GetComponent<RectTransform>().localPosition = textDelta;
+
+
         rawText = line;
         dialogText.text = "";
 
