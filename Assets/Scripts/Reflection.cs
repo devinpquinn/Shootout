@@ -12,7 +12,7 @@ public class Reflection : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if(rend.sprite != targetRenderer.sprite)
         {
