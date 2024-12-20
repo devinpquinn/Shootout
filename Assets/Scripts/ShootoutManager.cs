@@ -94,6 +94,6 @@ public class ShootoutManager : MonoBehaviour
     public void CutOffDialog()
     {
         dialogText.lockScroll = true;
-        dialogText.dialogText.text += "--";
+        dialogText.dialogText.text += "—";
     }
 }

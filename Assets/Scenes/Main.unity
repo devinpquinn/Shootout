@@ -1425,7 +1425,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9128fd779a109bf4f804b0bf1205e708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogText: {fileID: 0}
   lockAdvance: 0
+  lockScroll: 0
   bubble: {fileID: 168720289}
 --- !u!1 &1857657080
 GameObject:
@@ -1459,7 +1461,7 @@ MonoBehaviour:
   lines:
   - This is the first line.
   - This is the second line. It's a bit longer than the first line.
-  - This is the third line. Believe it or not, it's even a bit longer. Impressive,
+  - This is the third line, and believe it or not, it's even a bit longer. Impressive,
     right? Surely this is all we can fit.
   - And finally, this is the fourth line. Wow, look at all the space that's left
     in this speech bubble. Surely we're not going for four lines... No, that's impossible.
