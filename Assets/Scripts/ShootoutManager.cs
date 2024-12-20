@@ -17,6 +17,9 @@ public class ShootoutManager : MonoBehaviour
     private float drawTime = 0.5f;
     private Coroutine enemyDraw;
 
+    private bool playerDrew = false;
+    private bool enemyDrew = false;
+
     private void Awake()
     {
         instance = this;
@@ -29,17 +32,12 @@ public class ShootoutManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetMouseButtonDown(0))
         {
-            Idle();
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            PlayerDraw();
-        }
-        else if (Input.GetKeyDown(KeyCode.A))
-        {
-            EnemyDraw();
+            if(!playerDrew && !enemyDrew)
+            {
+                PlayerDraw();
+            }
         }
     }
 
@@ -52,10 +50,13 @@ public class ShootoutManager : MonoBehaviour
     {
         yield return new WaitForSeconds(drawTime);
 
-        EnemyDraw();
+        if (!playerDrew)
+        {
+            EnemyDraw();
+        }
     }
 
-    public void Idle()
+    public void ReadyAnims()
     {
         playerAnim.Play("Player_Idle");
         enemyAnim.Play("Enemy_Idle");
@@ -63,6 +64,8 @@ public class ShootoutManager : MonoBehaviour
 
     public void PlayerDraw()
     {
+        playerDrew = true;
+
         playerAnim.Play("Player_Draw");
         enemyAnim.Play("Enemy_Die");
 
@@ -80,6 +83,8 @@ public class ShootoutManager : MonoBehaviour
 
     public void EnemyDraw()
     {
+        enemyDrew = true;
+
         playerAnim.Play("Player_Die");
         enemyAnim.Play("Enemy_Draw");
     }
