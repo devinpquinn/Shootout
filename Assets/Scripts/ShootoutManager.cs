@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -78,8 +79,6 @@ public class ShootoutManager : MonoBehaviour
         {
             enemyAnim.SetBool("Alien", true);
         }
-
-        dialogText.lockAdvance = true;
     }
 
     public void EnemyDraw()
@@ -94,6 +93,16 @@ public class ShootoutManager : MonoBehaviour
     public void CutOffDialog()
     {
         dialogText.lockScroll = true;
-        dialogText.dialogText.text += "—";
+
+        //truncate string so that it ends with a letter
+        string input = dialogText.dialogText.text;
+        int length = input.Length;
+        while (length > 0 && !Char.IsLetterOrDigit(input[length - 1]))
+        {
+            length--;
+        }
+
+        input = input.Substring(0, length);
+        dialogText.dialogText.text = input +  "—";
     }
 }

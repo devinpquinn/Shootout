@@ -30,7 +30,6 @@ public class TextScroller : MonoBehaviour
     */
 
     private Coroutine waitToAdvance;
-    [HideInInspector] public bool lockAdvance = false;
     [HideInInspector] public bool lockScroll = false;
 
     //UI
@@ -130,17 +129,13 @@ public class TextScroller : MonoBehaviour
             dialogText.text = rawText;
 
             //wait for a few seconds and then advance
-            if (!lockAdvance)
-            {
-                waitToAdvance = StartCoroutine(WaitAndAdvance());
-            }
+            waitToAdvance = StartCoroutine(WaitAndAdvance());
         }
 
         if (!ShootoutManager.instance.encounter.currentHunch.decoy && dialogText.text.EndsWith(ShootoutManager.instance.encounter.currentHunch.keyword))
         {
             //start timer for enemy to shoot
             ShootoutManager.instance.PrepareToDraw();
-            lockAdvance = true;
         }
     }
 
@@ -148,7 +143,7 @@ public class TextScroller : MonoBehaviour
     {
         yield return new WaitForSeconds(2.5f);
 
-        if (!lockAdvance)
+        if (!lockScroll)
         {
             ShootoutManager.instance.encounter.Continue();
         }
