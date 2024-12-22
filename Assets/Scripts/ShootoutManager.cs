@@ -96,6 +96,12 @@ public class ShootoutManager : MonoBehaviour
 
         //truncate string so that it ends with a letter
         string input = dialogText.dialogText.text;
+
+        if (input.EndsWith(".") && !input.EndsWith("..."))
+        {
+            return;
+        }
+
         int length = input.Length;
         while (length > 0 && !Char.IsLetterOrDigit(input[length - 1]))
         {
@@ -103,6 +109,6 @@ public class ShootoutManager : MonoBehaviour
         }
 
         input = input.Substring(0, length);
-        dialogText.dialogText.text = input +  "—";
+        dialogText.dialogText.text = input + "—";
     }
 }
