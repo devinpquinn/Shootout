@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 168720289}
   - component: {fileID: 168720291}
   - component: {fileID: 168720290}
+  - component: {fileID: 168720292}
   m_Layer: 5
   m_Name: Bubble
   m_TagString: Untagged
@@ -198,6 +199,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168720288}
   m_CullTransparentMesh: 1
+--- !u!114 &168720292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168720288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03880b07b0b674fa69c7e97ff106c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1856363167}
+  maxLines: 4
+  minHeight: 189
+  maxHeight: 360
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,11 +1327,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1608479999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -35}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 97}
   m_SizeDelta: {x: 1000, y: 230}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1856363167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,7 +1388,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1426,7 +1443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 0}
-  lockAdvance: 0
   lockScroll: 0
   bubble: {fileID: 168720289}
 --- !u!1 &1857657080
