@@ -1329,7 +1329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 97}
+  m_AnchoredPosition: {x: 0, y: 99}
   m_SizeDelta: {x: 1000, y: 230}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1856363167
@@ -1479,8 +1479,8 @@ MonoBehaviour:
   - This is the second line. It's a bit longer than the first line.
   - This is the third line, and believe it or not, it's even a bit longer. Impressive,
     right? Surely this is all we can fit.
-  - And finally, this is the fourth line. Wow, look at all the space that's left
-    in this speech bubble. Surely we're not going for four lines... No, that's impossible.
+  - And finally, this is the fourth line. This one is the longest of them all, and
+    this is as large a size as our speech bubble should achieve.
   hunches:
   - decoy: 0
     keyword: third
