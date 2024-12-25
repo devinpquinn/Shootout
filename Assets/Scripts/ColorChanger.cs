@@ -13,6 +13,7 @@ public class ColorChanger : MonoBehaviour
     public Image bubble;
     private Sprite bubbleDefault;
     public Sprite bubbleDark;
+    public Sprite bubbleAfter;
 
     public TextMeshProUGUI tmp;
     private Color tmpColorDefault;
@@ -35,7 +36,7 @@ public class ColorChanger : MonoBehaviour
     public void MuzzleFlash_Restore()
     {
         background.color = backgroundColorDefault;
-        bubble.sprite = bubbleDefault;
+        bubble.sprite = bubbleAfter;
         tmp.color = tmpColorDefault;
     }
 }

@@ -655,7 +655,8 @@ MonoBehaviour:
   background: {fileID: 1054795657}
   backgroundColorDark: {r: 0.02, g: 0.02, b: 0.02, a: 1}
   bubble: {fileID: 168720290}
-  bubbleDark: {fileID: 21300000, guid: d8e8e00e1d4959547bfa85ed8a66a7f3, type: 3}
+  bubbleDark: {fileID: 21300000, guid: f9868bad42853234f972cf808ac4610c, type: 3}
+  bubbleAfter: {fileID: 21300000, guid: 51975f6324e7f8b499cbe5ba51cb395e, type: 3}
   tmp: {fileID: 1856363167}
 --- !u!114 &648824287
 MonoBehaviour:
