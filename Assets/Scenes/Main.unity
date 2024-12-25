@@ -657,6 +657,7 @@ MonoBehaviour:
   bubble: {fileID: 168720290}
   bubbleDark: {fileID: 21300000, guid: f9868bad42853234f972cf808ac4610c, type: 3}
   bubbleAfter: {fileID: 21300000, guid: 51975f6324e7f8b499cbe5ba51cb395e, type: 3}
+  bubbleAnim: {fileID: 1608480002}
   tmp: {fileID: 1856363167}
 --- !u!114 &648824287
 MonoBehaviour:

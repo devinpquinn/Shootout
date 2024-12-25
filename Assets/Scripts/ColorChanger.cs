@@ -15,6 +15,8 @@ public class ColorChanger : MonoBehaviour
     public Sprite bubbleDark;
     public Sprite bubbleAfter;
 
+    public Animator bubbleAnim;
+
     public TextMeshProUGUI tmp;
     private Color tmpColorDefault;
     private Color tmpColorDark = Color.white;
@@ -38,5 +40,7 @@ public class ColorChanger : MonoBehaviour
         background.color = backgroundColorDefault;
         bubble.sprite = bubbleAfter;
         tmp.color = tmpColorDefault;
+
+        bubbleAnim.Play("SpeechBubble_Float");
     }
 }
