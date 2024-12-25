@@ -34,6 +34,7 @@ public class TextScroller : MonoBehaviour
 
     //UI
     public RectTransform bubble;
+    public Animator bubbleAnim;
 
     private void Awake()
     {
@@ -43,6 +44,11 @@ public class TextScroller : MonoBehaviour
 
     public void NewLine(string line)
     {
+        if(rawText.Length > 0)
+        {
+            bubbleAnim.Play("SpeechBubble_Pressed");
+        }
+
         rawText = line;
         dialogText.text = "";
 
