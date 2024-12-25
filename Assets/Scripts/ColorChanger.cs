@@ -32,7 +32,9 @@ public class ColorChanger : MonoBehaviour
     {
         background.color = backgroundColorDark;
         bubble.sprite = bubbleDark;
-        tmp.color = tmpColorDark;  
+        tmp.color = tmpColorDark;
+
+        bubbleAnim.Play("SpeechBubble_Float");
     }
 
     public void MuzzleFlash_Restore()
@@ -40,7 +42,5 @@ public class ColorChanger : MonoBehaviour
         background.color = backgroundColorDefault;
         bubble.sprite = bubbleAfter;
         tmp.color = tmpColorDefault;
-
-        bubbleAnim.Play("SpeechBubble_Float");
     }
 }
