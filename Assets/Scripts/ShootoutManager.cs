@@ -119,7 +119,7 @@ public class ShootoutManager : MonoBehaviour
 
     IEnumerator SetResultText(string input)
     {
-        yield return new WaitForSeconds(6.5f);
+        yield return new WaitForSeconds(5f);
         resultText.text = input;
     }
 }
