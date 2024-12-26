@@ -659,6 +659,7 @@ MonoBehaviour:
   bubbleDark: {fileID: 21300000, guid: f9868bad42853234f972cf808ac4610c, type: 3}
   bubbleAfter: {fileID: 21300000, guid: 51975f6324e7f8b499cbe5ba51cb395e, type: 3}
   bubbleAnim: {fileID: 1608480002}
+  hunchAnim: {fileID: 2113668396}
   tmp: {fileID: 1856363167}
 --- !u!114 &648824287
 MonoBehaviour:
@@ -1572,7 +1573,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -120}
-  m_SizeDelta: {x: 1000, y: 300}
+  m_SizeDelta: {x: 1100, y: 300}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2098208164
 MonoBehaviour:
@@ -1682,6 +1683,7 @@ GameObject:
   - component: {fileID: 2113668393}
   - component: {fileID: 2113668395}
   - component: {fileID: 2113668394}
+  - component: {fileID: 2113668396}
   m_Layer: 5
   m_Name: HunchText
   m_TagString: Untagged
@@ -1805,6 +1807,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113668392}
   m_CullTransparentMesh: 1
+--- !u!95 &2113668396
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113668392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0005d3a11737a6b4d8762e88bce54ccd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
