@@ -80,7 +80,7 @@ public class ShootoutManager : MonoBehaviour
         else
         {
             enemyAnim.SetBool("Alien", true);
-            StartCoroutine(SetResultText("Your gut was right and your aim was true."));
+            StartCoroutine(SetResultText("A judgement in lead gave the devil its due.\n\nYour gut called it right and your aim made it true."));
         }
     }
 
