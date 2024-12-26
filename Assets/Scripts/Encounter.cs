@@ -37,6 +37,7 @@ public class Encounter : MonoBehaviour
         else
         {
             //end encounter
+            //you win! hide dialog ui and show result text
         }
     }
 }

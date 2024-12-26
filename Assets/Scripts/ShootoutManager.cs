@@ -75,7 +75,7 @@ public class ShootoutManager : MonoBehaviour
         if (encounter.currentHunch.decoy)
         {
             enemyAnim.SetBool("Alien", false);
-            StartCoroutine(SetResultText("This red blood your damnation, what have you done?\n\nHuman life wasted by a fool with a gun"));
+            StartCoroutine(SetResultText("This red blood your damnation, what have you done?\n\nHuman life wasted by a fool with a gun."));
         }
         else
         {
@@ -92,7 +92,7 @@ public class ShootoutManager : MonoBehaviour
         playerAnim.Play("Player_Die");
         enemyAnim.Play("Enemy_Draw");
 
-        StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nOut here there's one law-- you were slow, now you're dead."));
+        StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nThe oldest of laws— you were slow, now you're dead."));
     }
 
     public void CutOffDialog()
