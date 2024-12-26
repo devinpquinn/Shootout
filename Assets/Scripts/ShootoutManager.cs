@@ -11,6 +11,7 @@ public class ShootoutManager : MonoBehaviour
     public Encounter encounter;
     public TextScroller dialogText;
     public TextMeshProUGUI hunchText;
+    public TextMeshProUGUI resultText;
 
     public Animator playerAnim;
     public Animator enemyAnim;
@@ -74,10 +75,12 @@ public class ShootoutManager : MonoBehaviour
         if (encounter.currentHunch.decoy)
         {
             enemyAnim.SetBool("Alien", false);
+            StartCoroutine(SetResultText("Blood runs red. What have you done?"));
         }
         else
         {
             enemyAnim.SetBool("Alien", true);
+            StartCoroutine(SetResultText("Your gut was right and your aim was true."));
         }
     }
 
@@ -88,6 +91,8 @@ public class ShootoutManager : MonoBehaviour
 
         playerAnim.Play("Player_Die");
         enemyAnim.Play("Enemy_Draw");
+
+        StartCoroutine(SetResultText("You hesitated a moment too long. Now you're dead."));
     }
 
     public void CutOffDialog()
@@ -110,5 +115,11 @@ public class ShootoutManager : MonoBehaviour
 
         input = input.Substring(0, length);
         dialogText.dialogText.text = input + "—";
+    }
+
+    IEnumerator SetResultText(string input)
+    {
+        yield return new WaitForSeconds(7f);
+        resultText.text = input;
     }
 }
