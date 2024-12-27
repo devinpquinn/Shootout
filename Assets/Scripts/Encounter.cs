@@ -53,7 +53,8 @@ public class Encounter : MonoBehaviour
         ColorChanger cc = ShootoutManager.instance.playerAnim.gameObject.GetComponent<ColorChanger>();
         cc.bubble.sprite = cc.bubbleAfter;
         cc.bubbleAnim.Play("SpeechBubble_Float");
-        yield return new WaitForSeconds(5f);
+        cc.hunchAnim.Play("TextFade_Out");
+        yield return new WaitForSeconds(4.8f);
 
         ShootoutManager.instance.resultText.text = "You win";
     }
