@@ -65,7 +65,7 @@ public class Encounter : MonoBehaviour
         cc.hunchAnim.Play("TextFade_Out");
         yield return new WaitForSeconds(4.8f);
 
-        ShootoutManager.instance.resultText.text = "Two humans disarm, put suspicion away\n\nYour paths both continue— no death on this day";
+        ShootoutManager.instance.resultText.text = "Two humans disarm, stow suspicion away\n\nYour paths both continue— no death on this day";
     }
 }
 
