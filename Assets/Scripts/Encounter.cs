@@ -14,13 +14,22 @@ public class Encounter : MonoBehaviour
 
     public void Begin()
     {
+        StartCoroutine(DoBegin());
+    }
+
+    IEnumerator DoBegin()
+    {
+        ShootoutManager.instance.dialogText.transform.parent.gameObject.SetActive(false);
+
         //select hunch
         currentHunch = hunches[Random.Range(0, hunches.Count)];
 
         //set hunch text
         ShootoutManager.instance.hunchText.SetText(currentHunch.hint);
 
-        //maybe wait?
+        yield return new WaitForSeconds(2);
+
+        ShootoutManager.instance.dialogText.transform.parent.gameObject.SetActive(true);
 
         //start playing lines of dialog
         lineIndex = 0;
