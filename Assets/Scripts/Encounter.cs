@@ -27,7 +27,7 @@ public class Encounter : MonoBehaviour
         //set hunch text
         ShootoutManager.instance.hunchText.SetText(currentHunch.hint);
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
 
         ShootoutManager.instance.dialogText.transform.parent.gameObject.SetActive(true);
 
