@@ -22,6 +22,8 @@ public class ShootoutManager : MonoBehaviour
     private bool playerDrew = false;
     private bool enemyDrew = false;
 
+    public Animator fadeAnim;
+
     private void Awake()
     {
         instance = this;
@@ -36,7 +38,7 @@ public class ShootoutManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(!playerDrew && !enemyDrew)
+            if(!playerDrew && !enemyDrew && !encounter.done)
             {
                 PlayerDraw();
             }

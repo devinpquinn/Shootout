@@ -10,6 +10,8 @@ public class Encounter : MonoBehaviour
 
     [HideInInspector] public Hunch currentHunch = null;
 
+    [HideInInspector] public bool done = false;
+
     public void Begin()
     {
         //select hunch
@@ -38,7 +40,22 @@ public class Encounter : MonoBehaviour
         {
             //end encounter
             //you win! hide dialog ui and show result text
+            done = true;
+            StartCoroutine(EndEncounter_Humans());
         }
+    }
+
+    IEnumerator EndEncounter_Humans()
+    {
+        ShootoutManager.instance.fadeAnim.Play("Fade_FlashWhite");
+        yield return new WaitForSeconds(0.25f);
+
+        ColorChanger cc = ShootoutManager.instance.playerAnim.gameObject.GetComponent<ColorChanger>();
+        cc.bubble.sprite = cc.bubbleAfter;
+        cc.bubbleAnim.Play("SpeechBubble_Float");
+        yield return new WaitForSeconds(5f);
+
+        ShootoutManager.instance.resultText.text = "You win";
     }
 }
 
