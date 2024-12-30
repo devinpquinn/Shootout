@@ -10,7 +10,8 @@ public class Encounter : MonoBehaviour
 
     [HideInInspector] public Hunch currentHunch = null;
 
-    [HideInInspector] public bool done = false;
+    [HideInInspector] public bool began = false;
+    [HideInInspector] public bool ended = false;
 
     public void Begin()
     {
@@ -34,6 +35,10 @@ public class Encounter : MonoBehaviour
         //start playing lines of dialog
         lineIndex = 0;
         ShootoutManager.instance.dialogText.NewLine(lines[0]);
+
+        yield return new WaitForSeconds(1f);
+
+        began = true;
     }
 
     public void Continue()
@@ -49,7 +54,7 @@ public class Encounter : MonoBehaviour
         {
             //end encounter
             //you win! hide dialog ui and show result text
-            done = true;
+            ended = true;
             StartCoroutine(EndEncounter_Humans());
         }
     }

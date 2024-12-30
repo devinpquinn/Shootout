@@ -38,7 +38,7 @@ public class ShootoutManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(!playerDrew && !enemyDrew && !encounter.done)
+            if(!playerDrew && !enemyDrew && encounter.began && !encounter.ended)
             {
                 PlayerDraw();
             }
