@@ -20,16 +20,12 @@ public class TextScroller : MonoBehaviour
     //decreases every update
     private float timer = Mathf.Infinity;
 
-    //audio stuff
-    /*
+    //audio
     private AudioSource textSource;
 
     public AudioClip letterSound;
-    public AudioClip skipSound;
     private string silentChars = ",.-?!;:()[]{}<>*& ";
-    */
 
-    private Coroutine waitToAdvance;
     [HideInInspector] public bool lockScroll = false;
 
     //UI
@@ -39,7 +35,7 @@ public class TextScroller : MonoBehaviour
     private void Awake()
     {
         dialogText = GetComponent<TextMeshProUGUI>();
-        //textSource = GetComponent<AudioSource>();
+        textSource = GetComponent<AudioSource>();
     }
 
     public void NewLine(string line)
@@ -115,19 +111,17 @@ public class TextScroller : MonoBehaviour
             dialogText.text = rawText.Substring(0, index);
 
             //letter audio
-            /*
             if (!silentChars.Contains(addedChar))
             {
                 //randomly vary pitch
                 float basePitch = 1f;
 
-                float margin = 0.06f;
+                float margin = 0.1f;
                 float amount = Random.Range(basePitch - margin, basePitch + margin);
 
                 textSource.pitch = amount;
                 textSource.PlayOneShot(letterSound);
             }
-            */
         }
         else
         {
@@ -135,7 +129,7 @@ public class TextScroller : MonoBehaviour
             dialogText.text = rawText;
 
             //wait for a few seconds and then advance
-            waitToAdvance = StartCoroutine(WaitAndAdvance());
+            StartCoroutine(WaitAndAdvance());
         }
 
         if (!ShootoutManager.instance.encounter.currentHunch.decoy && dialogText.text.EndsWith(ShootoutManager.instance.encounter.currentHunch.keyword))
