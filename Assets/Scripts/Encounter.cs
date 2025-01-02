@@ -68,7 +68,7 @@ public class Encounter : MonoBehaviour
         cc.bubble.sprite = cc.bubbleAfter;
         cc.bubbleAnim.Play("SpeechBubble_Float");
         cc.hunchAnim.Play("TextFade_Out");
-        yield return new WaitForSeconds(4.8f);
+        yield return new WaitForSeconds(4.3f);
 
         ShootoutManager.instance.resultText.text = "Two humans disarm, stow suspicion away\n\nYour paths both continue— no death on this day";
         ShootoutManager.instance.gameObject.GetComponent<AudioSource>().PlayOneShot(ShootoutManager.instance.winSound);

@@ -124,7 +124,7 @@ public class ShootoutManager : MonoBehaviour
 
     IEnumerator SetResultText(string input, bool win)
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4.5f);
 
         if (win)
         {
