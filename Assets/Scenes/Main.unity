@@ -2249,7 +2249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 0}
-  letterSound: {fileID: 8300000, guid: 1d4869d00215bc14a8fbda65b30a2dae, type: 3}
+  letterSound: {fileID: 8300000, guid: 1b7c73bd4479dbe448ade32e5e093907, type: 3}
   lockScroll: 0
   bubble: {fileID: 168720289}
   bubbleAnim: {fileID: 1608480002}
