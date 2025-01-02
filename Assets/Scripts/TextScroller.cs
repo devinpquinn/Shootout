@@ -15,7 +15,7 @@ public class TextScroller : MonoBehaviour
     private int index = 0;
 
     //how much time between displaying standard characters
-    private float timePerChar = 0.035f;
+    private float timePerChar = 0.05f;
 
     //decreases every update
     private float timer = Mathf.Infinity;
