@@ -71,6 +71,7 @@ public class Encounter : MonoBehaviour
         yield return new WaitForSeconds(4.8f);
 
         ShootoutManager.instance.resultText.text = "Two humans disarm, stow suspicion away\n\nYour paths both continue— no death on this day";
+        ShootoutManager.instance.gameObject.GetComponent<AudioSource>().PlayOneShot(ShootoutManager.instance.winSound);
     }
 }
 

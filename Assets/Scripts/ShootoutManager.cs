@@ -24,6 +24,9 @@ public class ShootoutManager : MonoBehaviour
 
     public Animator fadeAnim;
 
+    public AudioClip winSound;
+    public AudioClip loseSound;
+
     private void Awake()
     {
         instance = this;
@@ -77,12 +80,12 @@ public class ShootoutManager : MonoBehaviour
         if (encounter.currentHunch.decoy)
         {
             enemyAnim.SetBool("Alien", false);
-            StartCoroutine(SetResultText("This red blood your damnation, what have you done?\n\nHuman life wasted by a fool with a gun."));
+            StartCoroutine(SetResultText("This red blood your damnation, what have you done?\n\nHuman life wasted by a fool with a gun.", false));
         }
         else
         {
             enemyAnim.SetBool("Alien", true);
-            StartCoroutine(SetResultText("A judgement in lead gave the devil its due.\n\nYour gut called it right and your aim made it true."));
+            StartCoroutine(SetResultText("A judgement in lead gave the devil its due.\n\nYour gut called it right and your aim made it true.", true));
         }
     }
 
@@ -94,7 +97,7 @@ public class ShootoutManager : MonoBehaviour
         playerAnim.Play("Player_Die");
         enemyAnim.Play("Enemy_Draw");
 
-        StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nThe oldest of laws— you were slow, now you're dead."));
+        StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nThe oldest of laws— you were slow, now you're dead.", false));
     }
 
     public void CutOffDialog()
@@ -119,9 +122,19 @@ public class ShootoutManager : MonoBehaviour
         dialogText.dialogText.text = input + "—";
     }
 
-    IEnumerator SetResultText(string input)
+    IEnumerator SetResultText(string input, bool win)
     {
         yield return new WaitForSeconds(5f);
+
+        if (win)
+        {
+            GetComponent<AudioSource>().PlayOneShot(winSound);
+        }
+        else
+        {
+            GetComponent<AudioSource>().PlayOneShot(loseSound);
+        }
+
         resultText.text = input;
     }
 }
