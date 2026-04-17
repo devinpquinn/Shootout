@@ -17,6 +17,8 @@ public class ColorChanger : MonoBehaviour
 
     public Animator bubbleAnim;
 
+    public float backgroundRestoreDuration = 1f;
+
     public TextMeshProUGUI tmp;
     private Color tmpColorDefault;
     private Color tmpColorDark = Color.white;
@@ -31,6 +33,8 @@ public class ColorChanger : MonoBehaviour
     public void MuzzleFlash_Darken()
     {
         background.color = backgroundColorDark;
+        StartCoroutine(LerpBackgroundColor());
+        
         bubble.sprite = bubbleDark;
         tmp.color = tmpColorDark;
 
@@ -39,8 +43,20 @@ public class ColorChanger : MonoBehaviour
 
     public void MuzzleFlash_Restore()
     {
-        background.color = backgroundColorDefault;
         bubble.sprite = bubbleAfter;
         tmp.color = tmpColorDefault;
+    }
+
+    private IEnumerator LerpBackgroundColor()
+    {
+        float elapsed = 0f;
+        Color startColor = background.color;
+        while (elapsed < backgroundRestoreDuration)
+        {
+            elapsed += Time.deltaTime;
+            background.color = Color.Lerp(startColor, backgroundColorDefault, elapsed / backgroundRestoreDuration);
+            yield return null;
+        }
+        background.color = backgroundColorDefault;
     }
 }
