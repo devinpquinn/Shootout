@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 400505293}
   - component: {fileID: 400505292}
   m_Layer: 0
-  m_Name: GradientLight
+  m_Name: GradientSky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -514,7 +514,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 967397ac500878143a127a36c9b37b1b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.32941177}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.32941177}
   m_FlipX: 0
   m_FlipY: 1
   m_DrawMode: 0
@@ -1423,7 +1423,7 @@ GameObject:
   - component: {fileID: 884249700}
   - component: {fileID: 884249699}
   m_Layer: 0
-  m_Name: GradientDark
+  m_Name: GradientGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1567,7 +1567,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -99
   m_Sprite: {fileID: 21300000, guid: ab669bece87cc05418344f1d1ec3d478, type: 3}
-  m_Color: {r: 0.39215687, g: 0.64705884, b: 1, a: 1}
+  m_Color: {r: 0.3529412, g: 0.582353, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2775,7 +2775,7 @@ GameObject:
   - component: {fileID: 1998438749}
   - component: {fileID: 1998438748}
   m_Layer: 0
-  m_Name: DarkStrip
+  m_Name: GroundSurface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
