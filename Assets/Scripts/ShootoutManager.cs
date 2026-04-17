@@ -80,7 +80,7 @@ public class ShootoutManager : MonoBehaviour
         if (encounter.currentHunch.decoy)
         {
             enemyAnim.SetBool("Alien", false);
-            StartCoroutine(SetResultText("This red blood your damnation, what have you done?\n\nHuman life wasted by a fool with a gun.", false));
+            StartCoroutine(SetResultText("This red blood your damnation, what have you done?\n\nA human life wasted by a fool with a gun.", false));
         }
         else
         {
@@ -97,7 +97,7 @@ public class ShootoutManager : MonoBehaviour
         playerAnim.Play("Player_Die");
         enemyAnim.Play("Enemy_Draw");
 
-        StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nThe oldest of laws— you were slow, now you're dead.", false));
+        StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nThe oldest of lawsï¿½ you were slow, now you're dead.", false));
     }
 
     public void CutOffDialog()
@@ -119,7 +119,7 @@ public class ShootoutManager : MonoBehaviour
         }
 
         input = input.Substring(0, length);
-        dialogText.dialogText.text = input + "—";
+        dialogText.dialogText.text = input + "ï¿½";
     }
 
     IEnumerator SetResultText(string input, bool win)
