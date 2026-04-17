@@ -31,6 +31,8 @@ public class TextScroller : MonoBehaviour
     //UI
     public RectTransform bubble;
     public Animator bubbleAnim;
+    
+    public bool isHunchText = false;
 
     private void Awake()
     {
@@ -40,7 +42,7 @@ public class TextScroller : MonoBehaviour
 
     public void NewLine(string line)
     {
-        if(rawText.Length > 0 && bubbleAnim != null)
+        if(rawText.Length > 0 && !isHunchText)
         {
             bubbleAnim.Play("SpeechBubble_Pressed");
         }
@@ -143,7 +145,7 @@ public class TextScroller : MonoBehaviour
     {
         yield return new WaitForSeconds(2.5f);
 
-        if (!lockScroll)
+        if (!lockScroll && !isHunchText)
         {
             ShootoutManager.instance.encounter.Continue();
         }

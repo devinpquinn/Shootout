@@ -101,7 +101,7 @@ public class ShootoutManager : MonoBehaviour
         
         StartCoroutine(FlashDelayed(0.15f));
 
-        StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nThe oldest of laws— you were slow, now you're dead.", false));
+        StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nIt's the oldest of laws— you were slow, now you're dead.", false));
     }
     
     IEnumerator FlashDelayed(float delay)
