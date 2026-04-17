@@ -40,7 +40,7 @@ public class TextScroller : MonoBehaviour
 
     public void NewLine(string line)
     {
-        if(rawText.Length > 0)
+        if(rawText.Length > 0 && bubbleAnim != null)
         {
             bubbleAnim.Play("SpeechBubble_Pressed");
         }

@@ -26,7 +26,7 @@ public class Encounter : MonoBehaviour
         currentHunch = hunches[Random.Range(0, hunches.Count)];
 
         //set hunch text
-        ShootoutManager.instance.hunchText.SetText(currentHunch.hint);
+        ShootoutManager.instance.hunchText.NewLine(currentHunch.hint);
 
         yield return new WaitForSeconds(1);
 
@@ -67,10 +67,9 @@ public class Encounter : MonoBehaviour
         ColorChanger cc = ShootoutManager.instance.playerAnim.gameObject.GetComponent<ColorChanger>();
         cc.bubble.sprite = cc.bubbleAfter;
         cc.bubbleAnim.Play("SpeechBubble_Float");
-        cc.hunchAnim.Play("TextFade_Out");
         yield return new WaitForSeconds(4.3f);
 
-        ShootoutManager.instance.resultText.text = "Two humans disarm, stow suspicion away\n\nYour paths both continue— no death on this day";
+        ShootoutManager.instance.resultText.text = "Two humans disarm, stow suspicion away\n\nYour paths both continueï¿½ no death on this day";
         ShootoutManager.instance.gameObject.GetComponent<AudioSource>().PlayOneShot(ShootoutManager.instance.winSound);
     }
 }

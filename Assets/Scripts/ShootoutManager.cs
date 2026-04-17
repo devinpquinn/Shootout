@@ -10,7 +10,7 @@ public class ShootoutManager : MonoBehaviour
 
     public Encounter encounter;
     public TextScroller dialogText;
-    public TextMeshProUGUI hunchText;
+    public TextScroller hunchText;
     public TextMeshProUGUI resultText;
 
     public Animator playerAnim;
