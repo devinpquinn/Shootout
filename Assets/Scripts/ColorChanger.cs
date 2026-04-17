@@ -17,8 +17,6 @@ public class ColorChanger : MonoBehaviour
 
     public Animator bubbleAnim;
 
-    public float backgroundRestoreDuration = 1f;
-
     public TextMeshProUGUI tmp;
     private Color tmpColorDefault;
     private Color tmpColorDark = Color.white;
@@ -49,7 +47,10 @@ public class ColorChanger : MonoBehaviour
 
     private IEnumerator LerpBackgroundColor()
     {
+        yield return new WaitForSeconds(0.5f);
+    
         float elapsed = 0f;
+        float backgroundRestoreDuration = 0.1f;
         Color startColor = background.color;
         while (elapsed < backgroundRestoreDuration)
         {
