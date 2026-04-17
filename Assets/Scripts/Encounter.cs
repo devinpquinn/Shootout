@@ -28,7 +28,8 @@ public class Encounter : MonoBehaviour
         //set hunch text
         ShootoutManager.instance.hunchText.NewLine(currentHunch.hint);
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitUntil(() => ShootoutManager.instance.hunchText.isDone);
+        yield return new WaitForSeconds(1f);
 
         ShootoutManager.instance.dialogText.transform.parent.gameObject.SetActive(true);
 

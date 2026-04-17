@@ -27,6 +27,7 @@ public class TextScroller : MonoBehaviour
     private string silentChars = ",.-?!;:()[]{}<>*& ";
 
     [HideInInspector] public bool lockScroll = false;
+    [HideInInspector] public bool isDone = false;
 
     //UI
     public RectTransform bubble;
@@ -52,6 +53,7 @@ public class TextScroller : MonoBehaviour
 
         index = 0;
         timer = timePerChar;
+        isDone = false;
     }
 
     //when a character is advanced, update the text in the UI
@@ -129,6 +131,7 @@ public class TextScroller : MonoBehaviour
         {
             //display full text
             dialogText.text = rawText;
+            isDone = true;
 
             //wait for a few seconds and then advance
             StartCoroutine(WaitAndAdvance());
