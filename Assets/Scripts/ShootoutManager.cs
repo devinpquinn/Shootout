@@ -76,6 +76,8 @@ public class ShootoutManager : MonoBehaviour
 
         playerAnim.Play("Player_Draw");
         enemyAnim.Play("Enemy_Die");
+        
+        StartCoroutine(FlashDelayed(0.15f));
 
         if (encounter.currentHunch.decoy)
         {
@@ -96,8 +98,16 @@ public class ShootoutManager : MonoBehaviour
 
         playerAnim.Play("Player_Die");
         enemyAnim.Play("Enemy_Draw");
+        
+        StartCoroutine(FlashDelayed(0.15f));
 
         StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nThe oldest of laws— you were slow, now you're dead.", false));
+    }
+    
+    IEnumerator FlashDelayed(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        fadeAnim.Play("Fade_FlashWhiteInstant");
     }
 
     public void CutOffDialog()
