@@ -97,7 +97,7 @@ public class ShootoutManager : MonoBehaviour
         playerAnim.Play("Player_Die");
         enemyAnim.Play("Enemy_Draw");
 
-        StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nThe oldest of laws� you were slow, now you're dead.", false));
+        StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nThe oldest of laws— you were slow, now you're dead.", false));
     }
 
     public void CutOffDialog()
@@ -119,7 +119,7 @@ public class ShootoutManager : MonoBehaviour
         }
 
         input = input.Substring(0, length);
-        dialogText.dialogText.text = input + "�";
+        dialogText.dialogText.text = input + "—";
     }
 
     IEnumerator SetResultText(string input, bool win)
