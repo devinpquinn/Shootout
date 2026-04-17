@@ -68,6 +68,8 @@ public class Encounter : MonoBehaviour
         ColorChanger cc = ShootoutManager.instance.playerAnim.gameObject.GetComponent<ColorChanger>();
         cc.bubble.sprite = cc.bubbleAfter;
         cc.bubbleAnim.Play("SpeechBubble_Float");
+        cc.hunchBubble.sprite = cc.bubbleAfter;
+        cc.hunchBubbleAnim.Play("HunchBubble_Float");
         yield return new WaitForSeconds(4.3f);
 
         ShootoutManager.instance.resultText.text = "Two humans disarm, stow suspicion away\n\nYour paths both continue� no death on this day";
