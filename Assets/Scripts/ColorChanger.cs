@@ -11,11 +11,13 @@ public class ColorChanger : MonoBehaviour
     public Color backgroundColorDark;
 
     public Image bubble;
+    public Image hunchBubble;
     private Sprite bubbleDefault;
     public Sprite bubbleDark;
     public Sprite bubbleAfter;
 
     public Animator bubbleAnim;
+    public Animator hunchBubbleAnim;
 
     public TextMeshProUGUI tmp;
     private Color tmpColorDefault;
@@ -35,8 +37,12 @@ public class ColorChanger : MonoBehaviour
         
         bubble.sprite = bubbleDark;
         tmp.color = tmpColorDark;
+        
+        hunchBubble.sprite = bubbleDark;
 
         bubbleAnim.Play("SpeechBubble_Float");
+        hunchBubbleAnim.Play("HunchBubble_Float");
+        
     }
 
     public void MuzzleFlash_Restore()
