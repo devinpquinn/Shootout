@@ -1205,6 +1205,8 @@ MonoBehaviour:
   bubbleAnim: {fileID: 1608480002}
   hunchBubbleAnim: {fileID: 1417314512}
   tmp: {fileID: 1856363167}
+  shakeMagnitude: 0.15
+  shakeDuration: 0.5
 --- !u!114 &648824287
 MonoBehaviour:
   m_ObjectHideFlags: 0
