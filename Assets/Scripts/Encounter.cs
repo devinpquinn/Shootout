@@ -70,6 +70,9 @@ public class Encounter : MonoBehaviour
         cc.bubbleAnim.Play("SpeechBubble_Float");
         cc.hunchBubble.sprite = cc.bubbleDark;
         cc.hunchBubbleAnim.Play("HunchBubble_Float");
+        
+        ShootoutManager.instance.TriggerSkyLerp();
+        
         yield return new WaitForSeconds(4.3f);
 
         ShootoutManager.instance.resultText.text = "Two humans disarm, stow suspicion away\n\nYour paths both continue— no death on this day";

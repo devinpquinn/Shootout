@@ -1631,6 +1631,9 @@ MonoBehaviour:
   fadeAnim: {fileID: 307830234}
   winSound: {fileID: 8300000, guid: dc08cbdbfb5130249be3a302178dfcce, type: 3}
   loseSound: {fileID: 8300000, guid: 93966d4521612ac4185baf6136e4017e, type: 3}
+  skyRenderer: {fileID: 400505292}
+  skyEndColor: {r: 1, g: 0.5, b: 0, a: 0.65882355}
+  skyLerpDuration: 3
 --- !u!4 &1132137476
 Transform:
   m_ObjectHideFlags: 0

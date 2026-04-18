@@ -27,6 +27,10 @@ public class ShootoutManager : MonoBehaviour
     public AudioClip winSound;
     public AudioClip loseSound;
 
+    public SpriteRenderer skyRenderer;
+    public Color skyEndColor;
+    public float skyLerpDuration = 2f;
+
     private void Awake()
     {
         instance = this;
@@ -134,6 +138,8 @@ public class ShootoutManager : MonoBehaviour
 
     IEnumerator SetResultText(string input, bool win)
     {
+        TriggerSkyLerp();
+    
         yield return new WaitForSeconds(4.5f);
 
         if (win)
@@ -146,5 +152,23 @@ public class ShootoutManager : MonoBehaviour
         }
 
         resultText.text = input;
+    }
+
+    public void TriggerSkyLerp()
+    {
+        StartCoroutine(LerpSky());
+    }
+
+    IEnumerator LerpSky()
+    {
+        Color startColor = skyRenderer.color;
+        float elapsed = 0f;
+        while (elapsed < skyLerpDuration)
+        {
+            elapsed += Time.deltaTime;
+            skyRenderer.color = Color.Lerp(startColor, skyEndColor, elapsed / skyLerpDuration);
+            yield return null;
+        }
+        skyRenderer.color = skyEndColor;
     }
 }
