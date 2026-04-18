@@ -23,6 +23,9 @@ public class ColorChanger : MonoBehaviour
     private Color tmpColorDefault;
     private Color tmpColorDark = Color.white;
 
+    public float shakeMagnitude = 0.15f;
+    public float shakeDuration = 0.4f;
+
     private void Awake()
     {
         backgroundColorDefault = background.color;
@@ -42,7 +45,25 @@ public class ColorChanger : MonoBehaviour
 
         bubbleAnim.Play("SpeechBubble_Float");
         hunchBubbleAnim.Play("HunchBubble_Float");
-        
+
+        StartCoroutine(ShakeCamera());
+    }
+
+    private IEnumerator ShakeCamera()
+    {
+        Camera cam = Camera.main;
+        Vector3 originalPos = cam.transform.localPosition;
+        float elapsed = 0f;
+
+        while (elapsed < shakeDuration)
+        {
+            float strength = shakeMagnitude * (1f - elapsed / shakeDuration);
+            cam.transform.localPosition = originalPos + (Vector3)Random.insideUnitCircle * strength;
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        cam.transform.localPosition = originalPos;
     }
 
     public void MuzzleFlash_Restore()
