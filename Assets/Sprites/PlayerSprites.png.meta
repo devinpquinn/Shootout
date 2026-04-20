@@ -839,6 +839,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: PlayerSprites_32
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 68
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2292f2998ce4eb94baf8a3f3a2de642a
+      internalID: 1976018759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -881,6 +903,7 @@ TextureImporter:
       PlayerSprites_3: -946976287
       PlayerSprites_30: -1580429503
       PlayerSprites_31: -2035623640
+      PlayerSprites_32: 1976018759
       PlayerSprites_4: 69245209
       PlayerSprites_5: -1277515869
       PlayerSprites_6: -1802996352
