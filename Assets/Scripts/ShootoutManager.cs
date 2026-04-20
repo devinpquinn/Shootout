@@ -154,7 +154,7 @@ public class ShootoutManager : MonoBehaviour
         
         if(resultState == 0)
         {
-            playerAnim.SetTrigger("ShotAlien");
+            playerAnim.SetTrigger("ShotHuman");
         }
         else if(resultState == 1)
         {
