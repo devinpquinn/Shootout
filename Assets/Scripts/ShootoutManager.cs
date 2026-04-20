@@ -86,12 +86,12 @@ public class ShootoutManager : MonoBehaviour
         if (encounter.currentHunch.decoy)
         {
             enemyAnim.SetBool("Alien", false);
-            StartCoroutine(SetResultText("This red blood your damnation, what have you done?\n\nA human life wasted by a fool with a gun.", false));
+            StartCoroutine(SetResultText(0));
         }
         else
         {
             enemyAnim.SetBool("Alien", true);
-            StartCoroutine(SetResultText("A judgement in lead gave the devil its due.\n\nYour gut called it right and your aim made it true.", true));
+            StartCoroutine(SetResultText(1));
         }
     }
 
@@ -105,7 +105,7 @@ public class ShootoutManager : MonoBehaviour
         
         StartCoroutine(FlashDelayed(0.15f));
 
-        StartCoroutine(SetResultText("Your blood paints the ground one last lesson in red.\n\nIt's the oldest of laws— you were slow, now you're dead.", false));
+        StartCoroutine(SetResultText(2));
     }
     
     IEnumerator FlashDelayed(float delay)
@@ -136,22 +136,25 @@ public class ShootoutManager : MonoBehaviour
         dialogText.dialogText.text = input + "—";
     }
 
-    IEnumerator SetResultText(string input, bool win)
+    // resultState: 0 = shot human, 1 = shot alien, 2 = enemy drew, 3 = both humans
+    public IEnumerator SetResultText(int resultState)
     {
+        string[] texts = new string[]
+        {
+            "This red blood your damnation, what have you done?\n\nA human life wasted by a fool with a gun.",
+            "A judgement in lead gave the devil its due.\n\nYour gut called it right and your aim made it true.",
+            "Your blood paints the ground one last lesson in red.\n\nIt's the oldest of laws— you were slow, now you're dead.",
+            "Two humans disarm, stow suspicion away\n\nYour paths both continue— no death on this day"
+        };
+        bool win = resultState == 1 || resultState == 3;
+
         TriggerSkyLerp();
-    
+
         yield return new WaitForSeconds(4.5f);
 
-        if (win)
-        {
-            GetComponent<AudioSource>().PlayOneShot(winSound);
-        }
-        else
-        {
-            GetComponent<AudioSource>().PlayOneShot(loseSound);
-        }
+        GetComponent<AudioSource>().PlayOneShot(win ? winSound : loseSound);
 
-        resultText.text = input;
+        resultText.text = texts[resultState];
     }
 
     public void TriggerSkyLerp()
