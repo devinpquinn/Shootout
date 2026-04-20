@@ -151,6 +151,11 @@ public class ShootoutManager : MonoBehaviour
         TriggerSkyLerp();
 
         yield return new WaitForSeconds(4.5f);
+        
+        if(resultState == 1)
+        {
+            playerAnim.SetTrigger("ShotAlien");
+        }
 
         GetComponent<AudioSource>().PlayOneShot(win ? winSound : loseSound);
 
