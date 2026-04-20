@@ -152,9 +152,17 @@ public class ShootoutManager : MonoBehaviour
 
         yield return new WaitForSeconds(4.5f);
         
-        if(resultState == 1)
+        if(resultState == 0)
         {
             playerAnim.SetTrigger("ShotAlien");
+        }
+        else if(resultState == 1)
+        {
+            playerAnim.SetTrigger("ShotAlien");
+        }
+        else if(resultState == 2)
+        {
+            enemyAnim.SetTrigger("ShotHuman");
         }
 
         GetComponent<AudioSource>().PlayOneShot(win ? winSound : loseSound);
