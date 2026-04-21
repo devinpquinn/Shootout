@@ -2883,10 +2883,10 @@ MonoBehaviour:
   hunches:
   - decoy: 0
     keyword: third
-    hint: Third
+    hint: The word "third"
   - decoy: 1
     keyword: sarsaparilla
-    hint: Sarsaparilla
+    hint: This is a decoy hunch, no worries
   currentHunch:
     decoy: 0
     keyword: 

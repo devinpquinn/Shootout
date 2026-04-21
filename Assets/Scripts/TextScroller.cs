@@ -137,7 +137,7 @@ public class TextScroller : MonoBehaviour
             StartCoroutine(WaitAndAdvance());
         }
 
-        if (!ShootoutManager.instance.encounter.currentHunch.decoy && dialogText.text.EndsWith(ShootoutManager.instance.encounter.currentHunch.keyword))
+        if (!isHunchText && !ShootoutManager.instance.encounter.currentHunch.decoy && dialogText.text.EndsWith(ShootoutManager.instance.encounter.currentHunch.keyword))
         {
             //start timer for enemy to shoot
             ShootoutManager.instance.PrepareToDraw();
