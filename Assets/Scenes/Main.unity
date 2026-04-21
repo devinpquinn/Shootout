@@ -2115,7 +2115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleAudioPlayer
   clips:
-  - {fileID: 8300000, guid: 09c4775c28aa5a34aa27546738f4e5a8, type: 3}
+  - {fileID: 8300000, guid: 41aa5b09555d0c04a99e134a890298bc, type: 3}
 --- !u!82 &1417314514
 AudioSource:
   m_ObjectHideFlags: 0
