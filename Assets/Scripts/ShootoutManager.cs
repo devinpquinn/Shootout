@@ -141,10 +141,10 @@ public class ShootoutManager : MonoBehaviour
     {
         string[] texts = new string[]
         {
-            "This red blood your damnation, what have you done?\n\nA human life wasted by a fool with a gun.",
-            "A judgement in lead gave the devil its due.\n\nYour gut called it right and your aim made it true.",
-            "Your blood paints the ground one last lesson in red.\n\nIt's the oldest of laws— you were slow, now you're dead.",
-            "Two humans disarm, stow suspicion away\n\nYour paths both continue— no death on this day"
+            "This crimson blood condemns your act of haste.\n\nA human life laid low in senseless waste.",
+            "A leaden judgment paid the devil due.\n\nYour gut spoke sense, your aim has proved it true.",
+            "Your blood upon the dust spells out in red\n\nThe oldest law— too slow, now you are dead.",
+            "Suspicion fades; no shot disturbs the air.\n\nTwo strangers pass, and leave the moment there."
         };
         bool win = resultState == 1 || resultState == 3;
 
