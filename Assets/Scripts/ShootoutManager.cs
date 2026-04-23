@@ -12,6 +12,7 @@ public class ShootoutManager : MonoBehaviour
     public TextScroller dialogText;
     public TextScroller hunchText;
     public TextMeshProUGUI resultText;
+    public GameObject clickToContinuePrompt;
 
     public Animator playerAnim;
     public Animator enemyAnim;
@@ -167,7 +168,10 @@ public class ShootoutManager : MonoBehaviour
 
         GetComponent<AudioSource>().PlayOneShot(win ? winSound : loseSound);
 
+        resultText.gameObject.SetActive(true);
         resultText.text = texts[resultState];
+        
+        clickToContinuePrompt.SetActive(true);
     }
 
     public void TriggerSkyLerp()
