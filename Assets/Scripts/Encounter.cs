@@ -27,10 +27,12 @@ public class Encounter : MonoBehaviour
 
         //set hunch text
         ShootoutManager.instance.hunchText.NewLine(currentHunch.hint);
+        ShootoutManager.instance.hunchPrompt.SetActive(true);
 
         yield return new WaitUntil(() => ShootoutManager.instance.hunchText.isDone);
         yield return new WaitForSeconds(1f);
 
+        ShootoutManager.instance.hunchPrompt.SetActive(false);
         ShootoutManager.instance.dialogText.transform.parent.gameObject.SetActive(true);
 
         //start playing lines of dialog

@@ -24,6 +24,7 @@ public class ShootoutManager : MonoBehaviour
     private bool enemyDrew = false;
 
     public Animator fadeAnim;
+    public GameObject hunchPrompt;
 
     public AudioClip winSound;
     public AudioClip loseSound;
