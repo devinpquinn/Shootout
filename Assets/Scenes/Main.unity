@@ -1598,7 +1598,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 3
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 1024
   m_textAlignment: 65535
@@ -1801,10 +1801,13 @@ MonoBehaviour:
   encounter: {fileID: 1857657081}
   dialogText: {fileID: 1856363169}
   hunchText: {fileID: 2113668397}
+  hunchBubbleObj: {fileID: 1417314509}
   resultText: {fileID: 2098208164}
   clickToContinuePrompt: {fileID: 1705418939}
   playerAnim: {fileID: 648824285}
   enemyAnim: {fileID: 595785064}
+  hunchTextDelay: 1
+  continuePromptDelay: 1
   fadeAnim: {fileID: 307830234}
   hunchPrompt: {fileID: 970148919}
   winSound: {fileID: 8300000, guid: dc08cbdbfb5130249be3a302178dfcce, type: 3}
@@ -2862,7 +2865,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3362,8 +3365,6 @@ GameObject:
   - component: {fileID: 2098208163}
   - component: {fileID: 2098208165}
   - component: {fileID: 2098208164}
-  - component: {fileID: 2098208167}
-  - component: {fileID: 2098208166}
   m_Layer: 5
   m_Name: ResultText
   m_TagString: Untagged
@@ -3489,40 +3490,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098208162}
   m_CullTransparentMesh: 1
---- !u!95 &2098208166
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098208162}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2c66f0f4e8097ce469d70fb73a47ae98, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!225 &2098208167
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098208162}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &2113668392
 GameObject:
   m_ObjectHideFlags: 0

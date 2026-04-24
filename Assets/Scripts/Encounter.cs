@@ -21,13 +21,17 @@ public class Encounter : MonoBehaviour
     IEnumerator DoBegin()
     {
         ShootoutManager.instance.dialogText.transform.parent.gameObject.SetActive(false);
+        ShootoutManager.instance.hunchPrompt.SetActive(false);
+        ShootoutManager.instance.hunchBubbleObj.SetActive(false);
 
         //select hunch
         currentHunch = hunches[Random.Range(0, hunches.Count)];
 
         //set hunch text
-        ShootoutManager.instance.hunchText.NewLine(currentHunch.hint);
         ShootoutManager.instance.hunchPrompt.SetActive(true);
+        yield return new WaitForSeconds(ShootoutManager.instance.hunchTextDelay);
+        ShootoutManager.instance.hunchBubbleObj.SetActive(true);
+        ShootoutManager.instance.hunchText.NewLine(currentHunch.hint);
 
         yield return new WaitUntil(() => ShootoutManager.instance.hunchText.isDone);
         yield return new WaitForSeconds(1f);

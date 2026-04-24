@@ -11,6 +11,7 @@ public class ShootoutManager : MonoBehaviour
     public Encounter encounter;
     public TextScroller dialogText;
     public TextScroller hunchText;
+    public GameObject hunchBubbleObj;
     public TextMeshProUGUI resultText;
     public GameObject clickToContinuePrompt;
 
@@ -19,6 +20,9 @@ public class ShootoutManager : MonoBehaviour
 
     private float drawTime = 0.5f;
     private Coroutine enemyDraw;
+
+    public float hunchTextDelay = 1f;
+    public float continuePromptDelay = 1.5f;
 
     private bool playerDrew = false;
     private bool enemyDrew = false;
@@ -171,7 +175,9 @@ public class ShootoutManager : MonoBehaviour
 
         resultText.gameObject.SetActive(true);
         resultText.text = texts[resultState];
-        
+
+        yield return new WaitForSeconds(continuePromptDelay);
+
         clickToContinuePrompt.SetActive(true);
     }
 
