@@ -32,7 +32,6 @@ public class ShootoutManager : MonoBehaviour
 
     public SpriteRenderer skyRenderer;
     public Color skyEndColor;
-    public float skyLerpDuration = 2f;
 
     private void Awake()
     {
@@ -179,7 +178,7 @@ public class ShootoutManager : MonoBehaviour
         resultText.gameObject.SetActive(true);
         resultText.text = texts[resultState];
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         clickToContinuePrompt.SetActive(true);
     }
@@ -193,6 +192,7 @@ public class ShootoutManager : MonoBehaviour
     {
         Color startColor = skyRenderer.color;
         float elapsed = 0f;
+        float skyLerpDuration = 3f;
         while (elapsed < skyLerpDuration)
         {
             elapsed += Time.deltaTime;
