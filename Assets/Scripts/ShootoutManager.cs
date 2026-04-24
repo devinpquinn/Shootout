@@ -18,7 +18,7 @@ public class ShootoutManager : MonoBehaviour
     public Animator playerAnim;
     public Animator enemyAnim;
 
-    private float drawTime = 0.5f;
+    public float enemyReactionTime = 0.5f;
     private Coroutine enemyDraw;
 
     private bool playerDrew = false;
@@ -67,7 +67,7 @@ public class ShootoutManager : MonoBehaviour
 
     IEnumerator CountdownToDraw()
     {
-        yield return new WaitForSeconds(drawTime);
+        yield return new WaitForSeconds(enemyReactionTime);
 
         if (!playerDrew)
         {
