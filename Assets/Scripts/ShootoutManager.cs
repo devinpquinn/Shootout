@@ -21,9 +21,6 @@ public class ShootoutManager : MonoBehaviour
     private float drawTime = 0.5f;
     private Coroutine enemyDraw;
 
-    public float hunchTextDelay = 1f;
-    public float continuePromptDelay = 1.5f;
-
     private bool playerDrew = false;
     private bool enemyDrew = false;
 
@@ -176,7 +173,7 @@ public class ShootoutManager : MonoBehaviour
         resultText.gameObject.SetActive(true);
         resultText.text = texts[resultState];
 
-        yield return new WaitForSeconds(continuePromptDelay);
+        yield return new WaitForSeconds(1f);
 
         clickToContinuePrompt.SetActive(true);
     }
