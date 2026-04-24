@@ -34,9 +34,9 @@ public class Encounter : MonoBehaviour
         ShootoutManager.instance.hunchText.NewLine(currentHunch.hint);
 
         yield return new WaitUntil(() => ShootoutManager.instance.hunchText.isDone);
-        yield return new WaitForSeconds(1f);
-
-        ShootoutManager.instance.hunchPrompt.SetActive(false);
+        yield return new WaitForSeconds(0.1f);
+        ShootoutManager.instance.hunchPrompt.GetComponent<Animator>().Play("HunchPrompt_Out");
+        yield return new WaitForSeconds(1.5f); // wait for the animation to finish
         ShootoutManager.instance.dialogText.transform.parent.gameObject.SetActive(true);
 
         //start playing lines of dialog
