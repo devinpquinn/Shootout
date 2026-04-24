@@ -41,6 +41,12 @@ public class ShootoutManager : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(WaitAndBeginEncounter());
+    }
+    
+    IEnumerator WaitAndBeginEncounter()
+    {
+        yield return new WaitForSeconds(1f);
         encounter.Begin();
     }
 
