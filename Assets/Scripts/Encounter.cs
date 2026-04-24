@@ -1,12 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Encounter : MonoBehaviour
 {
-    public List<string> lines; //the dialog text of this encounter
+    public EncounterData data;
     private int lineIndex = 0;
-    public List<Hunch> hunches;
 
     [HideInInspector] public Hunch currentHunch = null;
 
@@ -25,7 +23,7 @@ public class Encounter : MonoBehaviour
         ShootoutManager.instance.hunchBubbleObj.SetActive(false);
 
         //select hunch
-        currentHunch = hunches[Random.Range(0, hunches.Count)];
+        currentHunch = data.hunches[Random.Range(0, data.hunches.Count)];
 
         //set hunch text
         ShootoutManager.instance.hunchPrompt.SetActive(true);
@@ -41,7 +39,7 @@ public class Encounter : MonoBehaviour
 
         //start playing lines of dialog
         lineIndex = 0;
-        ShootoutManager.instance.dialogText.NewLine(lines[0]);
+        ShootoutManager.instance.dialogText.NewLine(data.lines[0]);
 
         yield return new WaitForSeconds(1f);
 
@@ -52,10 +50,10 @@ public class Encounter : MonoBehaviour
     {
         lineIndex++;
 
-        if(lines.Count > lineIndex)
+        if(data.lines.Count > lineIndex)
         {
             //continue to next line
-            ShootoutManager.instance.dialogText.NewLine(lines[lineIndex]);
+            ShootoutManager.instance.dialogText.NewLine(data.lines[lineIndex]);
         }
         else
         {
@@ -81,10 +79,3 @@ public class Encounter : MonoBehaviour
     }
 }
 
-[System.Serializable]
-public class Hunch
-{
-    public bool decoy = false; //whether or not this hunch actually has a trigger within the encounter's dialog
-    public string keyword; //the text sought within the encounter lines that triggers the shootout (if this is a decoy, this keyword will not be present)
-    public string hint; //the text of the hunch displayed to the player
-}

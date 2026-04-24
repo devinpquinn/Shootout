@@ -1925,7 +1925,6 @@ MonoBehaviour:
   loseSound: {fileID: 8300000, guid: 93966d4521612ac4185baf6136e4017e, type: 3}
   skyRenderer: {fileID: 400505292}
   skyEndColor: {r: 1, g: 0.5, b: 0, a: 0.65882355}
-  skyLerpDuration: 3
 --- !u!4 &1132137476
 Transform:
   m_ObjectHideFlags: 0
@@ -3322,7 +3321,7 @@ GameObject:
   - component: {fileID: 1857657082}
   - component: {fileID: 1857657081}
   m_Layer: 0
-  m_Name: Test Encounter
+  m_Name: Encounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3340,20 +3339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a36e1a5b0e761ca47bca93015a0b7894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines:
-  - This is the first line.
-  - This is the second line. It's a bit longer than the first line.
-  - This is the third line, and believe it or not, it's even a bit longer. Impressive,
-    right? Surely this is all we can fit.
-  - And finally, this is the fourth line. This one is the longest of them all, and
-    this is as large a size as our speech bubble should achieve.
-  hunches:
-  - decoy: 0
-    keyword: third
-    hint: The word "third"
-  - decoy: 1
-    keyword: sarsaparilla
-    hint: This is a decoy hunch, no worries here
+  data: {fileID: 11400000, guid: 979b7fd197e8ebf4c91e97d1a70e7b8e, type: 2}
   currentHunch:
     decoy: 0
     keyword: 
@@ -3861,10 +3847,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 1132137476}
+  - {fileID: 1857657082}
   - {fileID: 558596842}
   - {fileID: 307830238}
   - {fileID: 847897201}
-  - {fileID: 1857657082}
   - {fileID: 1054795658}
   - {fileID: 400505293}
   - {fileID: 884249700}
