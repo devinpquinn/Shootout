@@ -41,7 +41,7 @@ public class Encounter : MonoBehaviour
         lineIndex = 0;
         ShootoutManager.instance.dialogText.NewLine(data.lines[0]);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
 
         began = true;
     }
