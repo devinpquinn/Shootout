@@ -73,6 +73,17 @@ public class ShootoutManager : MonoBehaviour
 
     public void ResetGame()
     {
+        StartCoroutine(FadeAndReset());
+    }
+
+    IEnumerator FadeAndReset()
+    {
+        clickToContinuePrompt.SetActive(false);
+        fadeAnim.Play("Fade_Black");
+
+        yield return new WaitForSeconds(0.5f);
+
+        StopCoroutine(nameof(FadeAndReset));
         StopAllCoroutines();
         enemyDraw = null;
 
@@ -80,7 +91,6 @@ public class ShootoutManager : MonoBehaviour
         enemyDrew = false;
 
         resultText.gameObject.SetActive(false);
-        clickToContinuePrompt.SetActive(false);
 
         skyRenderer.color = skyStartColor;
 
