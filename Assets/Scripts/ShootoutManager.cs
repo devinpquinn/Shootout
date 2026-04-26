@@ -84,10 +84,8 @@ public class ShootoutManager : MonoBehaviour
 
         skyRenderer.color = skyStartColor;
 
-        playerAnim.Rebind();
-        playerAnim.Update(0f);
-        enemyAnim.Rebind();
-        enemyAnim.Update(0f);
+        playerAnim.Play("Player_Idle");
+        enemyAnim.Play("Enemy_Idle");
 
         ColorChanger cc = playerAnim.gameObject.GetComponent<ColorChanger>();
         cc.Reset();
