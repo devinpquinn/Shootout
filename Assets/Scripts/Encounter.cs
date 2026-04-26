@@ -64,6 +64,15 @@ public class Encounter : MonoBehaviour
         }
     }
 
+    public void Reset()
+    {
+        StopAllCoroutines();
+        lineIndex = 0;
+        began = false;
+        ended = false;
+        currentHunch = null;
+    }
+
     IEnumerator EndEncounter_Humans()
     {
         ShootoutManager.instance.fadeAnim.Play("Fade_FlashWhite");

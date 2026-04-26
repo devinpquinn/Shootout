@@ -32,6 +32,7 @@ public class ShootoutManager : MonoBehaviour
 
     public SpriteRenderer skyRenderer;
     public Color skyEndColor;
+    private Color skyStartColor;
 
     private void Awake()
     {
@@ -40,6 +41,7 @@ public class ShootoutManager : MonoBehaviour
 
     private void Start()
     {
+        skyStartColor = skyRenderer.color;
         StartCoroutine(WaitAndBeginEncounter());
     }
     
@@ -53,7 +55,11 @@ public class ShootoutManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(!playerDrew && !enemyDrew && encounter.began && !encounter.ended)
+            if (clickToContinuePrompt.activeSelf)
+            {
+                ResetGame();
+            }
+            else if(!playerDrew && !enemyDrew && encounter.began && !encounter.ended)
             {
                 PlayerDraw();
             }
@@ -63,6 +69,35 @@ public class ShootoutManager : MonoBehaviour
     public void PrepareToDraw()
     {
         enemyDraw = StartCoroutine(CountdownToDraw());
+    }
+
+    public void ResetGame()
+    {
+        StopAllCoroutines();
+        enemyDraw = null;
+
+        playerDrew = false;
+        enemyDrew = false;
+
+        resultText.gameObject.SetActive(false);
+        clickToContinuePrompt.SetActive(false);
+
+        skyRenderer.color = skyStartColor;
+
+        playerAnim.Rebind();
+        playerAnim.Update(0f);
+        enemyAnim.Rebind();
+        enemyAnim.Update(0f);
+
+        ColorChanger cc = playerAnim.gameObject.GetComponent<ColorChanger>();
+        cc.Reset();
+
+        dialogText.Reset();
+        hunchText.Reset();
+
+        encounter.Reset();
+
+        StartCoroutine(WaitAndBeginEncounter());
     }
 
     IEnumerator CountdownToDraw()

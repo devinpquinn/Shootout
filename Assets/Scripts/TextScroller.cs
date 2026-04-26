@@ -56,6 +56,16 @@ public class TextScroller : MonoBehaviour
         isDone = false;
     }
 
+    public void Reset()
+    {
+        lockScroll = false;
+        isDone = false;
+        rawText = "";
+        index = 0;
+        timer = Mathf.Infinity;
+        dialogText.text = "";
+    }
+
     //when a character is advanced, update the text in the UI
     public void AdvanceText()
     {

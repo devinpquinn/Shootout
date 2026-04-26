@@ -13,6 +13,7 @@ public class ColorChanger : MonoBehaviour
     public Image bubble;
     public Image hunchBubble;
     private Sprite bubbleDefault;
+    private Sprite hunchBubbleDefault;
     public Sprite bubbleDark;
     public Sprite bubbleAfter;
 
@@ -30,7 +31,17 @@ public class ColorChanger : MonoBehaviour
     {
         backgroundColorDefault = background.color;
         bubbleDefault = bubble.sprite;
+        hunchBubbleDefault = hunchBubble.sprite;
         tmpColorDefault = tmp.color;
+    }
+
+    public void Reset()
+    {
+        StopAllCoroutines();
+        background.color = backgroundColorDefault;
+        bubble.sprite = bubbleDefault;
+        hunchBubble.sprite = hunchBubbleDefault;
+        tmp.color = tmpColorDefault;
     }
 
     public void MuzzleFlash_Darken()
