@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Encounter
   m_EditorClassIdentifier: Assembly-CSharp::EncounterData
   lines:
-  - Why, right; you are i' the right;
+  - Why, right. You are in the right.
   - 'And so, without more circumstance at all, I hold it fit that we shake hands
-    and part: '
-  - You, as your business and desire shall point you; for every man has business
-    and desire,
-  - Such as it is; and for mine own poor part, look you, I'll go pray.
+    and part. '
+  - You, as your business and desire shall point you, for every man has business
+    and desire.
+  - Such as it is. And for mine own poor part, look you, I'll go pray.
   hunches:
   - decoy: 0
-    keyword: desire
-    hint: Makes a broad generalization
+    keyword: every man has business and desire
+    hint: A pair of words repeated
   - decoy: 1
     keyword: 
-    hint: The same word thrice in a sentence
+    hint: The same word thrice in one sentence
